@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2026-01-26" view-index="0" gantt-divider-location="488" resource-divider-location="300" version="3.3.3311" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="268" order="0"/>
+        <field id="tpd4" name="Date de début" width="102" order="1"/>
+        <field id="tpd5" name="Date de fin" width="102" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#9999ff #99ff33 #ff9900 #0000cc #cc0000]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="4129e10fdf3247068a32381a38acfa68" name="rendu final" color="#cc0000" meeting="true" start="2026-04-03" duration="0" complete="0" priority="4" expand="true"/>
+        <task id="1" uid="0612c810d8e94274ad2d424e54d7bf16" name="Gantt + cahier de charges" color="#9999ff" meeting="false" start="2026-02-10" duration="2" complete="0" expand="true"/>
+        <task id="7" uid="2f6e68ac4efc41deacff1ce4b8e70f89" name="Implémentation des structures" color="#99ff33" meeting="false" start="2026-02-11" duration="1" complete="0" expand="true">
+            <notes><![CDATA[struct processus{}]]></notes>
+        </task>
+        <task id="3" uid="8ff2c4ba2b9047deb603411d88d02e8a" name="Calcul des temps" color="#99ff33" meeting="false" start="2026-02-12" duration="4" complete="0" expand="true">
+            <notes><![CDATA[— Temps d’attente moyen et par processus ;
+— Temps de restitution moyen et par processus ;
+— Temps de réponse moyen et par processus ;
+— Taux d’occupation du CPU.]]></notes>
+        </task>
+        <task id="4" uid="a491a6ee9007440c9d77e13d8da5c74e" name="FIFO" color="#99ff33" meeting="false" start="2026-02-18" duration="3" complete="0" expand="true">
+            <notes><![CDATA[Ordonnancement en file]]></notes>
+        </task>
+        <task id="5" uid="9f3e9bc34a4a43e388408748adf4652b" name="SJF et SJRF" color="#0000cc" meeting="false" start="2026-02-18" duration="7" complete="0" expand="true">
+            <notes><![CDATA[Ordonnacement préemptif et non préemptif par priorité]]></notes>
+        </task>
+        <task id="6" uid="06ceace74f4d43feae8cf29e00639b16" name="RR" color="#ff9900" meeting="false" start="2026-02-18" duration="7" complete="0" expand="true">
+            <notes><![CDATA[Ordonnancement du tourniquet]]></notes>
+        </task>
+        <task id="9" uid="84ca3180679c4415a01d5c02f432b8c9" name="Lecture fichier CSV" color="#99ff33" meeting="false" start="2026-02-23" duration="3" complete="0" expand="true"/>
+        <task id="10" uid="44de809aa513427fb45ce65cfc28197f" name="Main CLI" color="#0000cc" meeting="false" start="2026-02-27" duration="1" complete="0" expand="true"/>
+        <task id="11" uid="22e49e34020048f48e45efbe2bb9b3b3" name="Makefile" color="#ff9900" meeting="false" start="2026-02-27" duration="1" complete="0" expand="true"/>
+        <task id="12" uid="cf2b37cfc6f347dfa8326774d8dcf097" name="Maintenance" color="#9999ff" meeting="false" start="2026-02-27" duration="4" complete="0" expand="true">
+            <notes><![CDATA[Tests unitaires]]></notes>
+        </task>
+        <task id="13" uid="a3fd188caa834745849856221c02ca42" name="Bonus : IHM Graphique" color="#0000cc" meeting="false" start="2026-03-05" duration="7" complete="0" expand="true"/>
+        <task id="14" uid="40f59fdcd1694f0993b882c8626d8248" name="Bonus : Interfaçage automatique" color="#ff9900" meeting="false" start="2026-03-09" duration="3" complete="0" expand="true"/>
+        <task id="15" uid="118f16e0e0ba4a6bad906b098530c291" name="Gestion E/S non parallélisables" color="#99ff33" meeting="false" start="2026-03-11" duration="3" complete="0" expand="true"/>
+        <task id="19" uid="e4e785fae010499dbc09f823bf34eb2e" name="Documentation développeur" color="#99ff33" meeting="false" start="2026-03-16" duration="3" complete="0" expand="true"/>
+        <task id="20" uid="9a2ab7a1a95e4e0192cffe5ccae8774c" name="Dernière maintenance" color="#9999ff" meeting="false" start="2026-03-18" duration="7" complete="0" expand="true">
+            <notes><![CDATA[Réctification des derniers bugs]]></notes>
+        </task>
+        <task id="17" uid="aa6845fb48034651b881903de843c100" name="Doxygen" color="#9999ff" meeting="false" start="2026-03-23" duration="4" complete="0" expand="true"/>
+        <task id="18" uid="5efd520d35f84ce1bba3c8b0846097c0" name="Video de démo" color="#9999ff" meeting="false" start="2026-03-26" duration="4" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Tsanta" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Tenzin" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Kaiwei" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="33.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="33.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="Default:1" responsible="true" load="33.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="0" function="Default:1" responsible="true" load="33.0"/>
+        <allocation task-id="17" resource-id="0" function="Default:1" responsible="true" load="33.0"/>
+        <allocation task-id="18" resource-id="0" function="Default:1" responsible="true" load="33.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="1" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="5" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="13" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="17" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="18" resource-id="1" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="0" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="1" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="6" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="14" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="17" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
+        <allocation task-id="18" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
