@@ -1,77 +1,117 @@
 #include <unistd.h>
-#include "ProcStruct.h"
+#include "File.h"
 
-int tous_termines(Processus* tab, int n){
-    for(int i = 0; i < n; i++){
-        if(!est_termine(tab[i]))
+Liste chercher_premier_pret(Liste l){
+    /**
+     * Parcourt une liste de processus et renvoie le premier processus prêt
+     * @param l : La liste de processus
+     * @return Si un processus prêt trouvé, renvoie ce dernier. NULL sinon
+     */
+    Liste ll = l;
+    while (ll != NULL){
+        if (est_pret(ll->proc))
+            return ll;
+        ll = ll->suivant;
+    }
+    return NULL;
+}
+int tous_termines_file(Liste l){
+    /**
+     * Verifie si tous les processus d'une liste sont tous terminés
+     * @param l : Liste de processus
+     * @return 1 si oui, 0 sinon
+     */
+    Liste ll = l;
+    while (!estVideListe(ll)){
+        if (!est_termine(ll->proc)){
             return 0;
+        }
+        ll = ll->suivant;
     }
     return 1;
 }
 
-int chercher_premier_pret(Processus* tab, int n){
-    for(int i = 0; i < n; i++){
-        if(est_pret(tab[i]))
-            return i;
-    }
-    return -1;
-}
 
-int FIFO(Processus* tab, int nbProcs){
+int FIFO(Liste liste){
+    /**
+     * Ordonnancement FIFO d'une liste de processus.
+     * @param liste : la liste de processus
+     * @return 0 si tout s'est bien passé
+     */
     int temps = 0;
-    int i;
-    int proc = -1;
+    int pid;
+    Liste l;
+    Liste courant = NULL;
+    int cpu_libre = 1;
 
-    while (!tous_termines(tab,nbProcs)){
-        for (i=0;i<nbProcs;i++){    // Active ceux qui sont arrivés
-            if (tab[i].arrive <= temps && non_arrive(tab[i])){
-                tab[i].etat = 1;
+    while (!tous_termines_file(liste)){
+
+        l = liste;
+
+        while (l != NULL){
+            if (l->proc.arrive <= temps && non_arrive(l->proc)){
+                printf("Processus %d arrivé dans le système\n",l->proc.pid);
+                l->proc.etat = 1;
+            }
+
+            if (est_bloque(l->proc) && !estVideCycle(l->proc.ES)){
+                l->proc.ES->duree--;
+
+                if (get_DureeCycle(l->proc.ES) == 0){
+                    supTeteCycle(&l->proc.ES);
+                    l->proc.etat = 1;
+                }
+            }
+
+            l = l->suivant;
+        }
+
+        if (cpu_libre){
+
+            courant = chercher_premier_pret(liste);
+
+            if (courant != NULL){
+                courant->proc.etat = 2;
+                pid = courant->proc.pid;
+                cpu_libre = 0;
+                printf("Processus %d lancé\n", courant->proc.pid);
             }
         }
 
-        if(proc == -1){     // Prends le prochain Processus prêt selon l'ordre du tab
-            proc = chercher_premier_pret(tab,nbProcs);
-            if (proc != -1){
-                printf("Processus %d prêt à être lancé\n",proc+1);
-                tab[proc].etat = 2;
+        if (!cpu_libre && courant != NULL){
+
+            printf("Processus %d en cours\t temps : %d\n",
+                   courant->proc.pid, temps);
+
+            if (!estVideCycle(courant->proc.CPU)){
+                courant->proc.CPU->duree--;
             }
-        }
 
-        if(proc != -1){     // Gestion des état des processus
-            printf("Processus en cours : %d\t temps : %d\n",proc+1,temps);
-            get_CPU(tab[proc])->duree--;
+            if (get_DureeCycle(courant->proc.CPU) == 0){
 
-            if(get_CPU(tab[proc])->duree == 0){
+                supTeteCycle(&courant->proc.CPU);
 
-                supTeteCycle(&tab[proc].CPU);
-
-                if(get_ES(tab[proc]) != NULL){
-                    printf("Processus %d bloqué\n",proc+1);
-                    tab[proc].etat = 3;
+                if (!estVideCycle(courant->proc.ES)){
+                    courant->proc.etat = 3;
+                    printf("Processus %d bloqué\n", courant->proc.pid);
                 }
                 else{
-                    printf("Processus %d terminé\n",proc+1);
-                    tab[proc].etat = 4;
+                    courant->proc.etat = 4;
+                    printf("Processus %d terminé\n", courant->proc.pid);
+                    supElement(liste, pid);
                 }
 
-                proc = -1;
+                cpu_libre = 1;
+                courant = NULL;
             }
         }
 
-        for (i=0;i<nbProcs;i++){    // Avance les E/S
-            if(est_bloque(tab[i])){
-                printf("Processus %d en E/S \t ES : %d\n",i+1,get_DureeCycle(get_ES(tab[i])));
-                tab[i].ES->duree--;
-
-                if (get_DureeCycle(get_ES(tab[i])) == 0){
-                    supTeteCycle(&tab[i].ES);
-                    tab[i].etat = 1;
-                }
-            }
-        }
         temps++;
-        sleep(5);
+        sleep(1);
     }
-    printf("Tous les processus sont traités ! temps : %d\n",temps);
+
+    printf("Tous les processus sont terminés\n");
     return 0;
 }
+
+
