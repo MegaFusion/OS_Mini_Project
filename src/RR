@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// 时间片大小（可以设为参数）
+#define QUANTUM 10  // 例如10ms
+
+void algorithme_RR(Processus processus[], int nb_processus, int quantum) {
+    // 1. 初始化
+    FileReady ready_queue = NULL;
+    int temps_actuel = 0;
+    int processus_restants = nb_processus;
+    
+    // 统计信息
+    float temps_attente_total = 0;
+    float temps_restitution_total = 0;
+    // ...
+    
+    // 2. 主循环 - 直到所有进程完成
+    while (processus_restants > 0) {
+        // 2.1 检查新到达的进程
+        for (int i = 0; i < nb_processus; i++) {
+            if (processus[i].arrive <= temps_actuel && 
+                non_arrive(processus[i])) {
+                processus[i].etat = 1;  // 设为就绪
+                enfiler(&ready_queue, i);
+            }
+        }
+        
+        // 2.2 如果就绪队列为空，时间推进
+        if (estVideFile(ready_queue)) {
+            temps_actuel++;
+            continue;
+        }
+        
+        // 2.3 取出一个进程执行
+        int idx = defiler(&ready_queue);
+        processus[idx].etat = 2;  // en_cours
+        
+        // 获取当前CPU突发时间
+        int duree_cpu = get_DureeCycle(processus[idx].CPU);
+        
+        // 2.4 计算本次执行时间
+        int exec_time = (duree_cpu < quantum) ? duree_cpu : quantum;
+        
+        // 2.5 执行进程
+        for (int t = 0; t < exec_time; t++) {
+            // 模拟执行1ms
+            temps_actuel++;
+            
+            // 检查是否有新进程到达
+            verifier_nouveaux_arrives(processus, nb_processus, 
+                                     temps_actuel, &ready_queue);
+            
+            // 更新当前进程的CPU剩余时间
+            // 需要记录每个进程的当前CPU突发剩余时间
+        }
+        
+        // 2.6 处理执行后的情况
+        // 更新CPU突发 - 减去已执行时间
+        // 如果CPU突发完成
+        if (duree_cpu <= exec_time) {
+            // CPU突发完成，转到下一个I/O或结束
+            if (!estVideCycle(processus[idx].ES)) {
+                // 有I/O操作
+                processus[idx].etat = 3;  // bloqué
+                // 记录I/O开始时间
+                // I/O完成后会回到就绪态
+            } else {
+                // 进程结束
+                processus[idx].etat = 4;  // terminé
+                processus_restants--;
+                
+                // 记录完成时间，计算统计信息
+                temps_restitution_total += (temps_actuel - processus[idx].arrive);
+            }
+        } else {
+            // CPU突发未完成，放回就绪队列末尾
+            processus[idx].etat = 1;  // pret
+            enfiler(&ready_queue, idx);
+            
+            // 更新CPU突发的剩余时间
+            // 需要减去已执行时间
+        }
+        
+        // 2.7 处理I/O完成
+        gerer_IO_terminees(processus, nb_processes, temps_actuel, &ready_queue);
+    }
+    
+    // 3. 输出统计信息
+    afficher_statistiques(...);
+}
