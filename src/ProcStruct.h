@@ -99,11 +99,13 @@ void supTeteCycle(Cycle *c){
 typedef struct {
     /**
      * Structure d'un processus
-     * @var pid     : numéro du processus
-     * @var arrive  : temps d'arrivé dans le système
-     * @var ES      : Cycle entrées/sorties
-     * @var CPU     : Cycle CPU
-     * @var etat    : état actuel du processus
+     * @var pid      : numéro du processus
+     * @var arrive   : temps d'arrivé dans le système
+     * @var ES       : Cycle entrées/sorties
+     * @var CPU      : Cycle CPU
+     * @var etat     : état actuel du processus
+	 * @var cpu_rest : temps CPU restant du burst courant
+	 * @var io_rest  : temps E/S restant du burst courant
      */
     int pid;
     int arrive;
@@ -116,6 +118,8 @@ typedef struct {
                                      - 4 : terminé  
 
     */
+	int cpu_rest;
+    int io_rest;
 
 }Processus;
 
