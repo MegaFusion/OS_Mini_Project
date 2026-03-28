@@ -1,15 +1,4 @@
-#include "ProcStruct.h"
-
-typedef struct celluleListe {
-    /**
-     * Structure d'une liste chainée
-     * @var proc : processus stocké 
-     * @var suivant : cellule suivante
-     */
-
-    Processus proc;
-    struct celluleListe* suivant;
-}*Liste;
+#include "Liste.h"
 
 int estVideListe(Liste l){
     /**
@@ -90,27 +79,27 @@ Liste inserProcListe(Liste l,Processus p){
         return inserTeteListe(l,p);
     }
     while (!estVideListe(ll->suivant)){
-        ll = l->suivant;
+        ll = ll->suivant;
     }
     ll->suivant = inserTeteListe(ll->suivant,p);
     return l;
 }
 
-int supElement(Liste l,int pid){
+int supElement(Liste* l,int pid){
     /**
      * Supprime une cellule dans une liste de processus
      * @param l     : La liste de processus
      * @param pid   : numéro du processus
      * @return Une verification : 1 si le processus est trouvé, 0 sinon
      */
-    if (estVideListe(l)){
+    if (estVideListe(*l)){
         return 0;
     }
-    if (l->proc.pid == pid){
-        supTeteListe(&l);
+    if ((*l)->proc.pid == pid){
+        supTeteListe(l);
         return 1;
     }
     else{
-        return supElement(l->suivant,pid);
+        return supElement(&(*l)->suivant,pid);
     }
 }

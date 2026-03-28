@@ -1,16 +1,4 @@
-
-#include <stdio.h>
-#include <stdlib.h>
-
-typedef struct cellule{
-    /**
-     * Structure d'un cycle contenant une liste de durée
-     * @var duree   : temps
-     * @var suivant : cellule suivante
-     */
-    int duree;
-    struct cellule* suivant;
-}*Cycle;
+#include "ProcStruct.h"
 
 Cycle initCycle(){
     /**
@@ -44,7 +32,9 @@ Cycle suivantCycle(Cycle c){
      * @param c : la cellule courante
      * @return la cellule suivante
      */
-    return c->suivant;
+    if (!estVideCycle(c))
+        return c->suivant;
+    return NULL;
 }
 Cycle inserTeteDureeCycle(Cycle c, int temps){
     /**
@@ -95,29 +85,6 @@ void supTeteCycle(Cycle *c){
     *c = suivantCycle(*c);
     free(cc);
 }
-
-typedef struct {
-    /**
-     * Structure d'un processus
-     * @var pid     : numéro du processus
-     * @var arrive  : temps d'arrivé dans le système
-     * @var ES      : Cycle entrées/sorties
-     * @var CPU     : Cycle CPU
-     * @var etat    : état actuel du processus
-     */
-    int pid;
-    int arrive;
-    Cycle ES;
-    Cycle CPU;
-    int etat;   /* état du processus - 0 : non arrivé
-                                     - 1 : pret
-                                     - 2 : en_cours
-                                     - 3 : bloqué
-                                     - 4 : terminé  
-
-    */
-
-}Processus;
 
 Cycle get_ES(Processus p){
     /**
