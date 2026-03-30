@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -Wall -Wextra -I../Inc
-SRC     = main.c ordonnancement.c FIFO.c SJF.c SJRF.c RR.c Liste.c ProcStruct.c
+SRC     = main.c ordonnancement.c FIFO.c SJF.c SJRF.c RR.c Liste.c ProcStruct.c calcul_temps.c
 TARGET  = main
 
 all: $(TARGET)

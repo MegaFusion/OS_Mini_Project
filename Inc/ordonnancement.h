@@ -6,6 +6,7 @@
 #include "FIFO.h"
 #include "SJF.h"
 #include "SJRF.h"
+#include "Calcul_temps.h"
 
 #define ALGO_FIFO 0
 #define ALGO_SJF  1
@@ -17,6 +18,10 @@ void afficher_ligne(Liste liste, int temps);
 Liste trier_par_arrivee(Liste l);
 Liste chercher_premier_pret(Liste l);
 int tous_termines_file(Liste l);
+void afficher_restitution(Liste l);
+void afficher_attente(Liste l);
+void afficher_reponse(Liste l);
+void afficher_occupation(int temps_CPU_actif, int temps_total, Liste liste);
 int ordonnancer(Liste *liste, int algo, int quantum);
 
 #endif

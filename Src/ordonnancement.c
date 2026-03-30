@@ -2,7 +2,7 @@
 
 /* Codes couleurs ANSI */
 #define NORMAL   "\033[0m"
-#define GRAS    "\033[1m"
+#define TOUT    "\033[1m"
 #define VERT "\033[1;32m"
 #define JAUNE "\033[1;33m"
 #define ROUGE "\033[1;31m"
@@ -15,14 +15,14 @@ void afficher_entete(Liste liste){
      * Affiche l'en tête du tableau
      * @param liste : la liste des processus
      */
-    printf("%-8s", "Temps");
+    printf("%-14s", "Temps");
     Liste l = liste;
     while (l != NULL){
         printf(" P%-5d", l->proc.pid);
         l = l->suivant;
     }
     printf("\n");
-    printf("--------");
+    printf("----------");
     l = liste;
     while (l != NULL){
         printf("--------");
@@ -52,7 +52,7 @@ void afficher_ligne(Liste liste, int temps){
      * @param liste : la liste des processus
      * @param temps : temps de l'ordonnancement
      */
-    printf("%-8d", temps);
+    printf("%-14d", temps);
     Liste l = liste;
     while (l != NULL){
         switch (l->proc.etat){
@@ -66,6 +66,75 @@ void afficher_ligne(Liste liste, int temps){
         }
         l = l->suivant;
     }
+    printf("\n");
+}
+
+void afficher_restitution(Liste liste){
+    Liste l = liste;
+    printf("----------");
+    while (l != NULL){
+        printf("--------");
+        l = l->suivant;
+    }
+    printf("\n");
+
+    printf(BLEU "%-14s" NORMAL,"Restitution");
+    l = liste;
+    while (! estVideListe(l)){
+        printf(" %-6d", Proc_temps_restitution(l->proc));
+        l = l->suivant;
+    }
+    printf("\n");
+}
+
+void afficher_attente(Liste liste){
+    Liste l = liste;
+    printf("----------");
+    while (l != NULL){
+        printf("--------");
+        l = l->suivant;
+    }
+    printf("\n");
+
+    printf(BLEU "%-14s" NORMAL,"Attente");
+    l = liste;
+    while (! estVideListe(l)){
+        printf(" %-6d", Proc_temps_attente(l->proc));
+        l = l->suivant;
+    }
+    printf("\n");
+}
+
+void afficher_reponse(Liste liste){
+    Liste l = liste;
+    printf("----------");
+    while (l != NULL){
+        printf("--------");
+        l = l->suivant;
+    }
+    printf("\n");
+
+    printf( BLEU "%-14s" NORMAL,"Reponse");
+    l = liste;
+    while (! estVideListe(l)){
+        printf(" %-6d", Proc_temps_reponse(l->proc));
+        l = l->suivant;
+    }
+    printf("\n");
+}
+
+void afficher_occupation(int temps_CPU_actif, int temps_total, Liste liste){
+    Liste l = liste;
+    printf("----------");
+    while (l != NULL){
+        printf("--------");
+        l = l->suivant;
+    }
+    printf("\n");
+
+    printf( VERT "%-14s" NORMAL,"T_occupation");
+    printf(" %.2f %%", Taux_occupation(temps_CPU_actif,temps_total));
+
     printf("\n");
 }
 
@@ -128,6 +197,7 @@ int ordonnancer(Liste *liste, int algo, int quantum){
     Liste l;
     Liste courant = NULL;
     int cpu_libre = 1;
+    int temps_CPU_actif = 0;
  
     const char *noms[] = {"FIFO", "SJF", "SJRF", "RR"};
  
@@ -138,7 +208,7 @@ int ordonnancer(Liste *liste, int algo, int quantum){
         printf("Quantum : %d\n\n", quantum);
  
     printf("Legende : "
-           BLEU "CPU" NORMAL " = en cours  "
+           BLEU "CPU" NORMAL " = en_cours  "
            JAUNE "PRT" NORMAL " = pret  "
            VIOLET "BLQ" NORMAL " = bloque  "
            VERT "FIN" NORMAL " = termine  "
@@ -164,13 +234,14 @@ int ordonnancer(Liste *liste, int algo, int quantum){
                     l->proc.etat = 1;
                 }
             }
- 
+            
             l = l->suivant;
         }
  
         /* traitement du processus en cours, changement d'état */
         if (!cpu_libre && courant != NULL){
- 
+            temps_CPU_actif ++;
+
             if (!estVideCycle(courant->proc.CPU)){
                 courant->proc.CPU->duree--;
             }
@@ -185,7 +256,9 @@ int ordonnancer(Liste *liste, int algo, int quantum){
                 }
                 else{
                     courant->proc.etat = 4;
+                    courant->proc.temps_fin = temps + 1;
                     courant = NULL;
+                    
                 }
  
                 cpu_libre = 1;
@@ -223,6 +296,11 @@ int ordonnancer(Liste *liste, int algo, int quantum){
                 courant->proc.etat = 2;
                 cpu_libre = 0;
                 ticks_restants = quantum;  /* initialise le quantum (ignoré hors RR) */
+
+                if (!(courant->proc.temps_premier_CPU_verif)){
+                courant->proc.temps_premier_CPU = temps;
+                courant->proc.temps_premier_CPU_verif = 1;
+            }
             }
         }
  
@@ -242,8 +320,20 @@ int ordonnancer(Liste *liste, int algo, int quantum){
         temps++;
         sleep(1);
     }
- 
-    printf("--------\n");
+
+    l = *liste;
+    afficher_restitution(l);
+
+    l = *liste;
+    afficher_reponse(l);
+
+    l = *liste;
+    afficher_attente(l);
+
+    l = *liste;
+    afficher_occupation(temps_CPU_actif, temps, l);
+
+    printf("\n==========\n\n");
     printf("Tous les processus sont terminés !\n\n");
     return 0;
 }

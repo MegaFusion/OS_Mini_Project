@@ -36,7 +36,12 @@ typedef struct {
                                      - 4 : terminé
                                      - 5 : terminé ( pour l'affichage )
 
-    */
+                */
+    int temps_fin;
+    int temps_CPU;
+    int temps_ES;
+    int temps_premier_CPU;
+    int temps_premier_CPU_verif;    /* Pour verifier si le tp_CPU a déja été affecté */
 
 }Processus;
 
@@ -49,11 +54,12 @@ Cycle inserDureeCycle(Cycle c,int temps);
 void supTeteCycle(Cycle *c);
 Cycle get_ES(Processus p);
 Cycle get_CPU(Processus p);
+Cycle creerCycle(int durees[], int taille);
 int non_arrive(Processus p);
 int est_pret(Processus p);
 int est_en_cours(Processus p);
 int est_bloque(Processus p);
 int est_termine(Processus p);
-
+Processus initProc(int pid, int arrive, int* tab_CPU,int taille_CPU, int* tab_ES, int taille_ES);
 
 #endif

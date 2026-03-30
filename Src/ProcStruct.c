@@ -78,7 +78,7 @@ void supTeteCycle(Cycle *c){
      */
     Cycle cc;
     if (estVideCycle(*c)){
-        printf("le cycle est deja vide\n");
+        printf("erreur suppression : le cycle est deja vide\n");
         exit(1);
     }
     cc = *c;
@@ -98,6 +98,52 @@ Cycle get_CPU(Processus p){
      */
     return p.CPU;
 }
+
+Cycle creerCycle(int durees[], int taille) {
+    /**
+     * Initialise un tableau de temps CPU ou ES pour un processus
+     * @param durees : tableau de temps
+     * @return un Cycle CPU ou ES
+     */
+    Cycle c = initCycle();
+    if (durees == NULL || taille == 0)
+        return c;
+    for (int i = 0; i < taille; i++) {
+        c = inserDureeCycle(c, durees[i]);
+    }
+    return c;
+}
+
+Processus initProc(int pid, int arrive, int* tab_CPU, int taille_CPU, int* tab_ES, int taille_ES){
+    /**
+     * Initialise un Processus
+     * @param pid : le numéro de Processus
+     * @param arrive : le temps d'arrivée dans le système
+     * @param tab_ES : tableau de temps ES
+     * @param tab_CPU : tableau de temps CPU
+     * @return Un processus initialisé
+     */
+    Processus p;
+    p.arrive = arrive;
+    p.pid = pid;
+    p.CPU = creerCycle(tab_CPU,taille_CPU);
+    p.ES = creerCycle(tab_ES,taille_ES);
+    p.etat = 0;
+    p.temps_fin = 0;
+    p.temps_premier_CPU = 0;
+    p.temps_premier_CPU_verif = 0;
+
+    p.temps_CPU = 0;
+    for (int i = 0; i < taille_CPU; i++)
+        p.temps_CPU += tab_CPU[i];
+
+    p.temps_ES = 0;
+    for (int i = 0; i < taille_ES; i++)
+        p.temps_ES += tab_ES[i];
+    
+    return p;
+}
+
 int non_arrive(Processus p){
     /**
      * Verifie si un processus n'est pas encore arrivé dans le système
