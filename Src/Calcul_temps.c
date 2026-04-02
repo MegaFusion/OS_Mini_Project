@@ -36,3 +36,53 @@ float Taux_occupation(int temps_CPU_actif, int temps_total){
      */
     return ((float)temps_CPU_actif / temps_total)*100;
 }
+
+int restitution_moyen(Liste liste){
+    /**
+     * Calcul du temps de restitution moyen de l'ordonnancement
+     * @param liste : la liste des processus
+     * @return le temps de restitution moyen
+     */
+    int restitution_total = 0;
+    int nbr_Proc = 0;
+    Liste l = liste;
+    while (!estVideListe(l)){
+        restitution_total += Proc_temps_restitution(l->proc);
+        l = l->suivant;
+        nbr_Proc ++;
+    }
+    return restitution_total / nbr_Proc;
+}
+int reponse_moyen(Liste liste){
+    /**
+     * Calcul du temps de reponse moyen de l'ordonnancement
+     * @param liste : la liste des processus
+     * @return le temps de reponse moyen
+     */
+    int reponse_total = 0;
+    int nbr_Proc = 0;
+    Liste l = liste;
+    while (!estVideListe(l)){
+        reponse_total += Proc_temps_reponse(l->proc);
+        l = l->suivant;
+        nbr_Proc ++;
+    }
+    return reponse_total / nbr_Proc;
+
+}
+int attente_moyen(Liste liste){
+    /**
+     * Calcul du temps de attente moyen de l'ordonnancement
+     * @param liste : la liste des processus
+     * @return le temps de attente moyen
+     */
+    int attente_total = 0;
+    int nbr_Proc = 0;
+    Liste l = liste;
+    while (!estVideListe(l)){
+        attente_total += Proc_temps_attente(l->proc);
+        l = l->suivant;
+        nbr_Proc ++;
+    }
+    return attente_total / nbr_Proc;
+}

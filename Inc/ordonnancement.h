@@ -3,7 +3,6 @@
  
 #include <unistd.h>
 #include "Liste.h"
-#include "FIFO.h"
 #include "SJF.h"
 #include "SJRF.h"
 #include "Calcul_temps.h"
@@ -22,6 +21,6 @@ void afficher_restitution(Liste l);
 void afficher_attente(Liste l);
 void afficher_reponse(Liste l);
 void afficher_occupation(int temps_CPU_actif, int temps_total, Liste liste);
-int ordonnancer(Liste *liste, int algo, int quantum);
+int ordonnancer(Liste *liste, int algo, int quantum, int csv);
 
 #endif

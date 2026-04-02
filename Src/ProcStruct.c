@@ -89,12 +89,16 @@ void supTeteCycle(Cycle *c){
 Cycle get_ES(Processus p){
     /**
      * Renvoie le cycle E/S d'un processus
+     * @param p : processus
+     * @return le cycle E/S du processus
      */
     return p.ES;
 }
 Cycle get_CPU(Processus p){
     /**
      * Renvoie le cycle CPU d'un processus
+     * @param p : processus
+     * @return le cycle CPU du processus
      */
     return p.CPU;
 }
@@ -147,30 +151,40 @@ Processus initProc(int pid, int arrive, int* tab_CPU, int taille_CPU, int* tab_E
 int non_arrive(Processus p){
     /**
      * Verifie si un processus n'est pas encore arrivé dans le système
+     * @param p : processus
+     * @return 1 si arrivé, 0 sinon
      */
     return (p.etat == 0);
 }
 int est_pret(Processus p){
     /**
      * Verifie si un processus est prêt
+     * @param p : processus
+     * @return 1 si pret, 0 sinon
      */
     return (p.etat == 1);
 }
 int est_en_cours(Processus p){
     /**
      * Verifie si un processus est en_cours
+     * @param p : processus
+     * @return 1 si en_cours, 0 sinon
      */
     return (p.etat == 2);
 }
 int est_bloque(Processus p){
     /**
      * Verifie si un processus est bloqué
+     * @param p : processus
+     * @return 1 si bloqué, 0 sinon
      */
     return (p.etat == 3);
 }
 int est_termine(Processus p){
     /**
      * Verifie si un processus est terminé
+     * @param p : processus
+     * @return 1 si terminé, 0 sinon
      */
     return (p.etat == 4);
 }

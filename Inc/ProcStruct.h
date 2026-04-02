@@ -35,7 +35,7 @@ typedef struct {
                                      - 3 : bloqué
                                      - 4 : terminé
                                      - 5 : terminé ( pour l'affichage )
-
+                                     - 6 : prêt mais en attente après quantum épuisé
                 */
     int temps_fin;
     int temps_CPU;

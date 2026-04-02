@@ -11,8 +11,7 @@ Liste chercher_sjf(Liste l){
 
     while (ll != NULL){
         if (est_pret(ll->proc)){
-            if (meilleur == NULL ||
-                get_DureeCycle(ll->proc.CPU) < get_DureeCycle(meilleur->proc.CPU)){
+            if (meilleur == NULL || get_DureeCycle(ll->proc.CPU) < get_DureeCycle(meilleur->proc.CPU)){
                 meilleur = ll;
             }
         }
