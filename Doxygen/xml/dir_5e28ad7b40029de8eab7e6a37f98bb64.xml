@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_5e28ad7b40029de8eab7e6a37f98bb64" kind="dir">
+    <compoundname>C:/Devoir/OS/Projet/Sources/Inc</compoundname>
+    <innerfile refid="d0/d93/_calcul__temps_8h">Calcul_temps.h</innerfile>
+    <innerfile refid="d8/d1e/lecture__fichier_8h">lecture_fichier.h</innerfile>
+    <innerfile refid="df/dcc/_liste_8h">Liste.h</innerfile>
+    <innerfile refid="df/d34/ordonnancement_8h">ordonnancement.h</innerfile>
+    <innerfile refid="d2/df0/_proc_struct_8h">ProcStruct.h</innerfile>
+    <innerfile refid="df/d81/_s_j_f_8h">SJF.h</innerfile>
+    <innerfile refid="d4/d4d/_s_j_r_f_8h">SJRF.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Devoir/OS/Projet/Sources/Inc/"/>
+  </compounddef>
+</doxygen>

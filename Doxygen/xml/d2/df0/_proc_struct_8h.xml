@@ -1,0 +1,727 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="d2/df0/_proc_struct_8h" kind="file" language="C++">
+    <compoundname>ProcStruct.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includedby refid="d0/d93/_calcul__temps_8h" local="yes">C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h</includedby>
+    <includedby refid="df/dcc/_liste_8h" local="yes">C:/Devoir/OS/Projet/Sources/Inc/Liste.h</includedby>
+    <includedby refid="d3/d3d/_proc_struct_8c" local="yes">C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h</label>
+        <link refid="d2/df0/_proc_struct_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h</label>
+        <link refid="d0/d93/_calcul__temps_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/Liste.h</label>
+        <link refid="df/dcc/_liste_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h</label>
+        <link refid="d2/df0/_proc_struct_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/SJF.h</label>
+        <link refid="df/d81/_s_j_f_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/SJRF.h</label>
+        <link refid="d4/d4d/_s_j_r_f_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/lecture_fichier.h</label>
+        <link refid="d8/d1e/lecture__fichier_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/ordonnancement.h</label>
+        <link refid="df/d34/ordonnancement_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c</label>
+        <link refid="de/d6d/_calcul__temps_8c"/>
+      </node>
+      <node id="14">
+        <label>C:/Devoir/OS/Projet/Sources/Src/Liste.c</label>
+        <link refid="de/d94/_liste_8c"/>
+      </node>
+      <node id="15">
+        <label>C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c</label>
+        <link refid="d3/d3d/_proc_struct_8c"/>
+      </node>
+      <node id="9">
+        <label>C:/Devoir/OS/Projet/Sources/Src/SJF.c</label>
+        <link refid="d6/da1/_s_j_f_8c"/>
+      </node>
+      <node id="11">
+        <label>C:/Devoir/OS/Projet/Sources/Src/SJRF.c</label>
+        <link refid="d0/d4e/_s_j_r_f_8c"/>
+      </node>
+      <node id="13">
+        <label>C:/Devoir/OS/Projet/Sources/Src/lecture_fichier.c</label>
+        <link refid="dd/d91/lecture__fichier_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Devoir/OS/Projet/Sources/Src/main.c</label>
+        <link refid="d0/d29/main_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Devoir/OS/Projet/Sources/Src/ordonnancement.c</label>
+        <link refid="df/d89/ordonnancement_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d7/ddb/structcellule" prot="public">cellule</innerclass>
+    <innerclass refid="d2/dff/struct_processus" prot="public">Processus</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" prot="public" static="no">
+        <type>struct <ref refid="d7/ddb/structcellule" kindref="compound">cellule</ref> *</type>
+        <definition>typedef struct cellule* Cycle</definition>
+        <argsstring></argsstring>
+        <name>Cycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="16" column="7"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1ab47fe3e54978f0f6a71cfdb7076857f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+        <definition>Cycle initCycle</definition>
+        <argsstring>()</argsstring>
+        <name>initCycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Initialise un <ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref> <simplesect kind="return"><para>un <ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref> vide</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="48" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="3" bodyend="9" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="48" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1a94d74b05aa292c781cd7c27492732e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int estVideCycle</definition>
+        <argsstring>(Cycle c)</argsstring>
+        <name>estVideCycle</name>
+        <param>
+          <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Verifie si un cycle est vide <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le cycle à verifier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: 1 si vide, 0 sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="49" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="10" bodyend="17" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="49" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1a843f0220c5dd400314b7c6a818007b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int get_DureeCycle</definition>
+        <argsstring>(Cycle c)</argsstring>
+        <name>get_DureeCycle</name>
+        <param>
+          <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Renvoie la durée stockée dans une cellule <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur vers la cellule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la durée</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="50" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="18" bodyend="28" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="50" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1a58c9a753a61c431ff73b42cc1e634bc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+        <definition>Cycle suivantCycle</definition>
+        <argsstring>(Cycle c)</argsstring>
+        <name>suivantCycle</name>
+        <param>
+          <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Renvoie la cellule suivante <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la cellule courante </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la cellule suivante</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="51" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="29" bodyend="38" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="51" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1a8cd63e24c680937d13c8994c49b0e4e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+        <definition>Cycle inserTeteDureeCycle</definition>
+        <argsstring>(Cycle c, int temps)</argsstring>
+        <name>inserTeteDureeCycle</name>
+        <param>
+          <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>temps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Insertion en tête d&apos;un cycle <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur sur la cellule du cycle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la durée contenu dans la cellule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Le cycle mis à jour</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="52" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="39" bodyend="55" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="52" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1ad6c8d0fd5b505a000bc71ad122449046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+        <definition>Cycle inserDureeCycle</definition>
+        <argsstring>(Cycle c, int temps)</argsstring>
+        <name>inserDureeCycle</name>
+        <param>
+          <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>temps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Insertion en queue du cycle donné <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur sur la cellule du cycle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la durée contenu dans la cellule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Le cycle mis à jour</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="53" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="56" bodyend="72" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="53" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1a91fd3e6378e45dd43c64367a963f6c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void supTeteCycle</definition>
+        <argsstring>(Cycle *c)</argsstring>
+        <name>supTeteCycle</name>
+        <param>
+          <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Supprime la tête du cycle donnée <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: adresse vers cycle</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="54" column="6" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="74" bodyend="87" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="54" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1a1670c6327fb750bb8eda88f967dc1b61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+        <definition>Cycle get_ES</definition>
+        <argsstring>(Processus p)</argsstring>
+        <name>get_ES</name>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Renvoie le cycle E/S d&apos;un processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le cycle E/S du processus</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="55" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="89" bodyend="96" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="55" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1a1e32d5f391a564dddaba370003e8588f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+        <definition>Cycle get_CPU</definition>
+        <argsstring>(Processus p)</argsstring>
+        <name>get_CPU</name>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Renvoie le cycle CPU d&apos;un processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le cycle CPU du processus</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="56" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="97" bodyend="104" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="56" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1a995123d410572a7bca2ab79d79e37546" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+        <definition>Cycle creerCycle</definition>
+        <argsstring>(int durees[], int taille)</argsstring>
+        <name>creerCycle</name>
+        <param>
+          <type>int</type>
+          <declname>durees</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>taille</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Initialise un tableau de temps CPU ou ES pour un processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>durees</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: tableau de temps </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un <ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref> CPU ou ES</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="57" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="106" bodyend="119" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="57" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1aaabf2a4d20bc75e75c9f640436419122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int non_arrive</definition>
+        <argsstring>(Processus p)</argsstring>
+        <name>non_arrive</name>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Verifie si un processus n&apos;est pas encore arrivé dans le système <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 si arrivé, 0 sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="58" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="151" bodyend="158" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="58" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1aef4ffc349c4bbd51c5e548639739e31a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int est_pret</definition>
+        <argsstring>(Processus p)</argsstring>
+        <name>est_pret</name>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Verifie si un processus est prêt <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 si pret, 0 sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="59" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="159" bodyend="166" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="59" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1ad379b14dff541a24578f91a9a4290cd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int est_en_cours</definition>
+        <argsstring>(Processus p)</argsstring>
+        <name>est_en_cours</name>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Verifie si un processus est en_cours <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 si en_cours, 0 sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="60" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="167" bodyend="174" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="60" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1ab14735f3543458f2849555246c12e8f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int est_bloque</definition>
+        <argsstring>(Processus p)</argsstring>
+        <name>est_bloque</name>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Verifie si un processus est bloqué <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 si bloqué, 0 sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="61" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="175" bodyend="182" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="61" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1a4688d9ffd28ac8bb4d076489663112b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int est_termine</definition>
+        <argsstring>(Processus p)</argsstring>
+        <name>est_termine</name>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Verifie si un processus est terminé <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 si terminé, 0 sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="62" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="183" bodyend="190" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="62" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df0/_proc_struct_8h_1ac16e6eff2dc9409f7becd2b26c02cfab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+        <definition>Processus initProc</definition>
+        <argsstring>(int pid, int arrive, int *tab_CPU, int taille_CPU, int *tab_ES, int taille_ES)</argsstring>
+        <name>initProc</name>
+        <param>
+          <type>int</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>arrive</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>tab_CPU</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>taille_CPU</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>tab_ES</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>taille_ES</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Initialise un <ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le numéro de <ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arrive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le temps d&apos;arrivée dans le système </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tab_ES</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: tableau de temps ES </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tab_CPU</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: tableau de temps CPU </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un processus initialisé</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="63" column="11" bodyfile="C:/Devoir/OS/Projet/Sources/Src/ProcStruct.c" bodystart="121" bodyend="149" declfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" declline="63" declcolumn="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PROCSTRUCT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROCSTRUCT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d7/ddb/structcellule" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d7/ddb/structcellule" kindref="compound">cellule</ref>{</highlight></codeline>
+<codeline lineno="14" refid="d7/ddb/structcellule_1abdc3435566d8c869e18e5579c4a0e953" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d7/ddb/structcellule_1abdc3435566d8c869e18e5579c4a0e953" kindref="member">duree</ref>;</highlight></codeline>
+<codeline lineno="15" refid="d7/ddb/structcellule_1a697f75c7dd9a48ef34247501cff1c084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d7/ddb/structcellule" kindref="compound">cellule</ref>*<sp/><ref refid="d7/ddb/structcellule_1a697f75c7dd9a48ef34247501cff1c084" kindref="member">suivant</ref>;</highlight></codeline>
+<codeline lineno="16" refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" refkind="member"><highlight class="normal">}*<ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d2/dff/struct_processus" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="d2/dff/struct_processus_1a5c907c4a6a278e1fa2287f625381c285" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/dff/struct_processus_1a5c907c4a6a278e1fa2287f625381c285" kindref="member">pid</ref>;</highlight></codeline>
+<codeline lineno="29" refid="d2/dff/struct_processus_1a4248efbd13b9394be63391dae15a4b66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/dff/struct_processus_1a4248efbd13b9394be63391dae15a4b66" kindref="member">arrive</ref>;</highlight></codeline>
+<codeline lineno="30" refid="d2/dff/struct_processus_1a806ad2ddd2773351e88c5f4323d1e777" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/><ref refid="d2/dff/struct_processus_1a806ad2ddd2773351e88c5f4323d1e777" kindref="member">ES</ref>;</highlight></codeline>
+<codeline lineno="31" refid="d2/dff/struct_processus_1ae29697e7ea4db9386bcfbf0d0956df37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/><ref refid="d2/dff/struct_processus_1ae29697e7ea4db9386bcfbf0d0956df37" kindref="member">CPU</ref>;</highlight></codeline>
+<codeline lineno="32" refid="d2/dff/struct_processus_1af4e781dc3f389522f06b41da8e324dda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/dff/struct_processus_1af4e781dc3f389522f06b41da8e324dda" kindref="member">etat</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>état<sp/>du<sp/>processus<sp/>-<sp/>0<sp/>:<sp/>non<sp/>arrivé</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>1<sp/>:<sp/>pret</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>2<sp/>:<sp/>en_cours</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>3<sp/>:<sp/>bloqué</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>4<sp/>:<sp/>terminé</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>5<sp/>:<sp/>terminé<sp/>(<sp/>pour<sp/>l&apos;affichage<sp/>)</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>6<sp/>:<sp/>prêt<sp/>mais<sp/>en<sp/>attente<sp/>après<sp/>quantum<sp/>épuisé</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d2/dff/struct_processus_1ade7b41965f58214785f03344697f9a9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/dff/struct_processus_1ade7b41965f58214785f03344697f9a9a" kindref="member">temps_fin</ref>;</highlight></codeline>
+<codeline lineno="41" refid="d2/dff/struct_processus_1a803b6d583bf50ffe633eb57e81366b84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/dff/struct_processus_1a803b6d583bf50ffe633eb57e81366b84" kindref="member">temps_CPU</ref>;</highlight></codeline>
+<codeline lineno="42" refid="d2/dff/struct_processus_1ade3a5d21ad11ff1669c4f099f0625595" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/dff/struct_processus_1ade3a5d21ad11ff1669c4f099f0625595" kindref="member">temps_ES</ref>;</highlight></codeline>
+<codeline lineno="43" refid="d2/dff/struct_processus_1a6a299b91d8a68e36386c5fd2fa250334" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/dff/struct_processus_1a6a299b91d8a68e36386c5fd2fa250334" kindref="member">temps_premier_CPU</ref>;</highlight></codeline>
+<codeline lineno="44" refid="d2/dff/struct_processus_1a8725ff30f67763349cb3229359b5d1eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/dff/struct_processus_1a8725ff30f67763349cb3229359b5d1eb" kindref="member">temps_premier_CPU_verif</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pour<sp/>verifier<sp/>si<sp/>le<sp/>tp_CPU<sp/>a<sp/>déja<sp/>été<sp/>affecté<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/><ref refid="d2/df0/_proc_struct_8h_1ab47fe3e54978f0f6a71cfdb7076857f0" kindref="member">initCycle</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/df0/_proc_struct_8h_1a94d74b05aa292c781cd7c27492732e90" kindref="member">estVideCycle</ref>(<ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/>c);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/df0/_proc_struct_8h_1a843f0220c5dd400314b7c6a818007b4f" kindref="member">get_DureeCycle</ref>(<ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/>c);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/><ref refid="d2/df0/_proc_struct_8h_1a58c9a753a61c431ff73b42cc1e634bc3" kindref="member">suivantCycle</ref>(<ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/>c);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/><ref refid="d2/df0/_proc_struct_8h_1a8cd63e24c680937d13c8994c49b0e4e2" kindref="member">inserTeteDureeCycle</ref>(<ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temps);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/><ref refid="d2/df0/_proc_struct_8h_1ad6c8d0fd5b505a000bc71ad122449046" kindref="member">inserDureeCycle</ref>(<ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/>c,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temps);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/df0/_proc_struct_8h_1a91fd3e6378e45dd43c64367a963f6c29" kindref="member">supTeteCycle</ref>(<ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/>*c);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/><ref refid="d2/df0/_proc_struct_8h_1a1670c6327fb750bb8eda88f967dc1b61" kindref="member">get_ES</ref>(<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/><ref refid="d2/df0/_proc_struct_8h_1a1e32d5f391a564dddaba370003e8588f" kindref="member">get_CPU</ref>(<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref><sp/><ref refid="d2/df0/_proc_struct_8h_1a995123d410572a7bca2ab79d79e37546" kindref="member">creerCycle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>durees[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>taille);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/df0/_proc_struct_8h_1aaabf2a4d20bc75e75c9f640436419122" kindref="member">non_arrive</ref>(<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/df0/_proc_struct_8h_1aef4ffc349c4bbd51c5e548639739e31a" kindref="member">est_pret</ref>(<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/df0/_proc_struct_8h_1ad379b14dff541a24578f91a9a4290cd6" kindref="member">est_en_cours</ref>(<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/df0/_proc_struct_8h_1ab14735f3543458f2849555246c12e8f0" kindref="member">est_bloque</ref>(<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/df0/_proc_struct_8h_1a4688d9ffd28ac8bb4d076489663112b2" kindref="member">est_termine</ref>(<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/><ref refid="d2/df0/_proc_struct_8h_1ac16e6eff2dc9409f7becd2b26c02cfab" kindref="member">initProc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arrive,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>tab_CPU,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>taille_CPU,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>tab_ES,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>taille_ES);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h"/>
+  </compounddef>
+</doxygen>

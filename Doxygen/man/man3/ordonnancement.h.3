@@ -1,0 +1,242 @@
+.TH "C:/Devoir/OS/Projet/Sources/Inc/ordonnancement.h" 3 "OS_projet_ordonnancement" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Devoir/OS/Projet/Sources/Inc/ordonnancement.h
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <unistd\&.h>\fP
+.br
+\fR#include 'Liste\&.h'\fP
+.br
+\fR#include 'SJF\&.h'\fP
+.br
+\fR#include 'SJRF\&.h'\fP
+.br
+\fR#include 'Calcul_temps\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBALGO_FIFO\fP   0"
+.br
+.ti -1c
+.RI "#define \fBALGO_SJF\fP   1"
+.br
+.ti -1c
+.RI "#define \fBALGO_SJRF\fP   2"
+.br
+.ti -1c
+.RI "#define \fBALGO_RR\fP   3"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBafficher_entete\fP (\fBListe\fP liste)"
+.br
+.ti -1c
+.RI "void \fBafficher_ligne\fP (\fBListe\fP liste, int temps)"
+.br
+.ti -1c
+.RI "\fBListe\fP \fBtrier_par_arrivee\fP (\fBListe\fP l)"
+.br
+.ti -1c
+.RI "\fBListe\fP \fBchercher_premier_pret\fP (\fBListe\fP l)"
+.br
+.ti -1c
+.RI "int \fBtous_termines_file\fP (\fBListe\fP l)"
+.br
+.ti -1c
+.RI "void \fBafficher_restitution\fP (\fBListe\fP l)"
+.br
+.ti -1c
+.RI "void \fBafficher_attente\fP (\fBListe\fP l)"
+.br
+.ti -1c
+.RI "void \fBafficher_reponse\fP (\fBListe\fP l)"
+.br
+.ti -1c
+.RI "void \fBafficher_restitution_moyen\fP (\fBListe\fP liste)"
+.br
+.ti -1c
+.RI "void \fBafficher_attente_moyen\fP (\fBListe\fP liste)"
+.br
+.ti -1c
+.RI "void \fBafficher_reponse_moyen\fP (\fBListe\fP liste)"
+.br
+.ti -1c
+.RI "void \fBafficher_occupation\fP (int temps_CPU_actif, int temps_total, \fBListe\fP liste)"
+.br
+.ti -1c
+.RI "int \fBordonnancer\fP (\fBListe\fP *liste, int algo, int quantum, int csv)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ALGO_FIFO   0"
+
+.SS "#define ALGO_RR   3"
+
+.SS "#define ALGO_SJF   1"
+
+.SS "#define ALGO_SJRF   2"
+
+.SH "Function Documentation"
+.PP 
+.SS "void afficher_attente (\fBListe\fP l)"
+Afficher le temps d'attente d'un processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste de processus
+.RE
+.PP
+
+.SS "void afficher_attente_moyen (\fBListe\fP liste)"
+Afficher le temps d'attente moyen d'un ordonnancement 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste de processus
+.RE
+.PP
+
+.SS "void afficher_entete (\fBListe\fP liste)"
+Affiche l'en tête du tableau 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste des processus
+.RE
+.PP
+
+.SS "void afficher_ligne (\fBListe\fP liste, int temps)"
+Affiche une ligne des informations de l'ordonnancement en fonction du temps 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste des processus 
+.br
+\fItemps\fP : temps de l'ordonnancement
+.RE
+.PP
+
+.SS "void afficher_occupation (int temps_CPU_actif, int temps_total, \fBListe\fP liste)"
+Afficher le temps d'occupation moyen du système durant un ordonnancement 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste de processus 
+.br
+\fItemps_CPU_actif\fP : temps où le CPU est resté occupé 
+.br
+\fItemps_total\fP : temps total de l'ordonnancement
+.RE
+.PP
+
+.SS "void afficher_reponse (\fBListe\fP l)"
+Afficher le temps de reponse d'un processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste de processus
+.RE
+.PP
+
+.SS "void afficher_reponse_moyen (\fBListe\fP liste)"
+Afficher le temps de reponse moyen d'un ordonnancement 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste de processus
+.RE
+.PP
+
+.SS "void afficher_restitution (\fBListe\fP l)"
+Afficher le temps de restitution d'un processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste de processus
+.RE
+.PP
+
+.SS "void afficher_restitution_moyen (\fBListe\fP liste)"
+Afficher le temps de restitution moyen d'un ordonnancement 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste de processus
+.RE
+.PP
+
+.SS "\fBListe\fP chercher_premier_pret (\fBListe\fP l)"
+Parcourt une liste de processus et renvoie le premier processus prêt 
+.PP
+\fBParameters\fP
+.RS 4
+\fIl\fP : La liste de processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Si un processus prêt trouvé et prioritaire, renvoie ce dernier\&. NULL sinon
+.RE
+.PP
+
+.SS "int ordonnancer (\fBListe\fP * liste, int algo, int quantum, int csv)"
+Ordonnancement d'une liste de processus selon l'algorithme choisi\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : adresse de la liste de processus 
+.br
+\fIalgo\fP : algorithme (ALGO_FIFO=0, ALGO_SJF=1, ALGO_SJRF=2, ALGO_RR=3) 
+.br
+\fIquantum\fP : durée du quantum pour RR (ignoré sinon) 
+.br
+\fIexport_csv\fP : 1 pour sauvegarder en CSV, 0 sinon 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 si tout s'est bien passé
+.RE
+.PP
+
+.SS "int tous_termines_file (\fBListe\fP l)"
+Verifie si tous les processus d'une liste sont tous terminés 
+.PP
+\fBParameters\fP
+.RS 4
+\fIl\fP : \fBListe\fP de processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+1 si oui, 0 sinon
+.RE
+.PP
+
+.SS "\fBListe\fP trier_par_arrivee (\fBListe\fP l)"
+Trie une liste de processus par ordre d'arrivée 
+.PP
+\fBParameters\fP
+.RS 4
+\fIl\fP : la liste à trier 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+la liste triée
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OS_projet_ordonnancement from the source code\&.

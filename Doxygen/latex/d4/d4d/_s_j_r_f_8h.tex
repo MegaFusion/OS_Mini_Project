@@ -1,0 +1,26 @@
+\doxysection{C\+:/\+Devoir/\+OS/\+Projet/\+Sources/\+Inc/\+SJRF.h File Reference}
+\label{_s_j_r_f_8h}\index{C:/Devoir/OS/Projet/Sources/Inc/SJRF.h@{C:/Devoir/OS/Projet/Sources/Inc/SJRF.h}}
+{\ttfamily \#include "{}Liste.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Liste} \textbf{ chercher\+\_\+sjrf} (\textbf{ Liste} l)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\doxysubsection{Function Documentation}
+\index{SJRF.h@{SJRF.h}!chercher\_sjrf@{chercher\_sjrf}}
+\index{chercher\_sjrf@{chercher\_sjrf}!SJRF.h@{SJRF.h}}
+\doxysubsubsection{chercher\_sjrf()}
+{\footnotesize\ttfamily \label{_s_j_r_f_8h_a377891ba51120e8290bcfb997ada9b85} 
+\textbf{ Liste} chercher\+\_\+sjrf (\begin{DoxyParamCaption}\item[{\textbf{ Liste}}]{l}{}\end{DoxyParamCaption})}
+
+Parcourt une liste de processus et renvoie le processus prêt ou en cours avec le plus petit temps d\textquotesingle{}éxecution, prendre en priorité les nouveaux arrivés si le temps d\textquotesingle{}éxecution est plus petit 
+\begin{DoxyParams}{Parameters}
+{\em l} & \+: La liste de processus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le processus avec le temps d\textquotesingle{}éxecution le plus court, NULL sinon
+\end{DoxyReturn}

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="d7/ddb/structcellule" kind="struct" language="C++" prot="public">
+    <compoundname>cellule</compoundname>
+    <includes refid="d2/df0/_proc_struct_8h" local="no">ProcStruct.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/ddb/structcellule_1abdc3435566d8c869e18e5579c4a0e953" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cellule::duree</definition>
+        <argsstring></argsstring>
+        <name>duree</name>
+        <qualifiedname>cellule::duree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="14" column="9" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/ddb/structcellule_1a697f75c7dd9a48ef34247501cff1c084" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="d7/ddb/structcellule" kindref="compound">cellule</ref> *</type>
+        <definition>struct cellule* cellule::suivant</definition>
+        <argsstring></argsstring>
+        <name>suivant</name>
+        <qualifiedname>cellule::suivant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="15" column="19" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>cellule</label>
+        <link refid="d7/ddb/structcellule"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>suivant</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="8" column="1" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="8" bodyend="16"/>
+    <listofallmembers>
+      <member refid="d7/ddb/structcellule_1abdc3435566d8c869e18e5579c4a0e953" prot="public" virt="non-virtual"><scope>cellule</scope><name>duree</name></member>
+      <member refid="d7/ddb/structcellule_1a697f75c7dd9a48ef34247501cff1c084" prot="public" virt="non-virtual"><scope>cellule</scope><name>suivant</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

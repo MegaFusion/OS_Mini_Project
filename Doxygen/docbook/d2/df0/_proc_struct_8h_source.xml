@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__proc_struct_8h_source" xml:lang="en-US">
+<title>ProcStruct.h</title>
+<indexterm><primary>C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+2 <emphasis role="preprocessor">#ifndef&#32;PROCSTRUCT_H</emphasis>
+3 <emphasis role="preprocessor">#define&#32;PROCSTRUCT_H</emphasis>
+4 
+5 <emphasis role="preprocessor">#include&#32;&lt;stdio.h&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;stdlib.h&gt;</emphasis>
+7 
+8 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_structcellule">cellule</link>{
+14 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_structcellule_1abdc3435566d8c869e18e5579c4a0e953">duree</link>;
+15 &#32;&#32;&#32;&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_structcellule">cellule</link>*&#32;<link linkend="_structcellule_1a697f75c7dd9a48ef34247501cff1c084">suivant</link>;
+16 }*<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>;
+17 
+18 
+19 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct&#32;</emphasis>{
+28 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_processus_1a5c907c4a6a278e1fa2287f625381c285">pid</link>;
+29 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_processus_1a4248efbd13b9394be63391dae15a4b66">arrive</link>;
+30 &#32;&#32;&#32;&#32;<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;<link linkend="_struct_processus_1a806ad2ddd2773351e88c5f4323d1e777">ES</link>;
+31 &#32;&#32;&#32;&#32;<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;<link linkend="_struct_processus_1ae29697e7ea4db9386bcfbf0d0956df37">CPU</link>;
+32 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_processus_1af4e781dc3f389522f06b41da8e324dda">etat</link>;&#32;&#32;&#32;<emphasis role="comment">/*&#32;état&#32;du&#32;processus&#32;-&#32;0&#32;:&#32;non&#32;arrivé</emphasis>
+33 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;-&#32;1&#32;:&#32;pret</emphasis>
+34 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;-&#32;2&#32;:&#32;en_cours</emphasis>
+35 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;-&#32;3&#32;:&#32;bloqué</emphasis>
+36 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;-&#32;4&#32;:&#32;terminé</emphasis>
+37 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;-&#32;5&#32;:&#32;terminé&#32;(&#32;pour&#32;l&apos;affichage&#32;)</emphasis>
+38 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;-&#32;6&#32;:&#32;prêt&#32;mais&#32;en&#32;attente&#32;après&#32;quantum&#32;épuisé</emphasis>
+39 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+40 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_processus_1ade7b41965f58214785f03344697f9a9a">temps_fin</link>;
+41 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_processus_1a803b6d583bf50ffe633eb57e81366b84">temps_CPU</link>;
+42 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_processus_1ade3a5d21ad11ff1669c4f099f0625595">temps_ES</link>;
+43 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_processus_1a6a299b91d8a68e36386c5fd2fa250334">temps_premier_CPU</link>;
+44 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_processus_1a8725ff30f67763349cb3229359b5d1eb">temps_premier_CPU_verif</link>;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Pour&#32;verifier&#32;si&#32;le&#32;tp_CPU&#32;a&#32;déja&#32;été&#32;affecté&#32;*/</emphasis>
+45 
+46 }<link linkend="_struct_processus">Processus</link>;
+47 
+48 <link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;<link linkend="__proc_struct_8h_1ab47fe3e54978f0f6a71cfdb7076857f0">initCycle</link>();
+49 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__proc_struct_8h_1a94d74b05aa292c781cd7c27492732e90">estVideCycle</link>(<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;c);
+50 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__proc_struct_8h_1a843f0220c5dd400314b7c6a818007b4f">get_DureeCycle</link>(<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;c);
+51 <link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;<link linkend="__proc_struct_8h_1a58c9a753a61c431ff73b42cc1e634bc3">suivantCycle</link>(<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;c);
+52 <link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;<link linkend="__proc_struct_8h_1a8cd63e24c680937d13c8994c49b0e4e2">inserTeteDureeCycle</link>(<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;c,&#32;<emphasis role="keywordtype">int</emphasis>&#32;temps);
+53 <link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;<link linkend="__proc_struct_8h_1ad6c8d0fd5b505a000bc71ad122449046">inserDureeCycle</link>(<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;c,<emphasis role="keywordtype">int</emphasis>&#32;temps);
+54 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__proc_struct_8h_1a91fd3e6378e45dd43c64367a963f6c29">supTeteCycle</link>(<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;*c);
+55 <link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;<link linkend="__proc_struct_8h_1a1670c6327fb750bb8eda88f967dc1b61">get_ES</link>(<link linkend="_struct_processus">Processus</link>&#32;p);
+56 <link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;<link linkend="__proc_struct_8h_1a1e32d5f391a564dddaba370003e8588f">get_CPU</link>(<link linkend="_struct_processus">Processus</link>&#32;p);
+57 <link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link>&#32;<link linkend="__proc_struct_8h_1a995123d410572a7bca2ab79d79e37546">creerCycle</link>(<emphasis role="keywordtype">int</emphasis>&#32;durees[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;taille);
+58 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__proc_struct_8h_1aaabf2a4d20bc75e75c9f640436419122">non_arrive</link>(<link linkend="_struct_processus">Processus</link>&#32;p);
+59 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__proc_struct_8h_1aef4ffc349c4bbd51c5e548639739e31a">est_pret</link>(<link linkend="_struct_processus">Processus</link>&#32;p);
+60 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__proc_struct_8h_1ad379b14dff541a24578f91a9a4290cd6">est_en_cours</link>(<link linkend="_struct_processus">Processus</link>&#32;p);
+61 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__proc_struct_8h_1ab14735f3543458f2849555246c12e8f0">est_bloque</link>(<link linkend="_struct_processus">Processus</link>&#32;p);
+62 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__proc_struct_8h_1a4688d9ffd28ac8bb4d076489663112b2">est_termine</link>(<link linkend="_struct_processus">Processus</link>&#32;p);
+63 <link linkend="_struct_processus">Processus</link>&#32;<link linkend="__proc_struct_8h_1ac16e6eff2dc9409f7becd2b26c02cfab">initProc</link>(<emphasis role="keywordtype">int</emphasis>&#32;pid,&#32;<emphasis role="keywordtype">int</emphasis>&#32;arrive,&#32;<emphasis role="keywordtype">int</emphasis>*&#32;tab_CPU,<emphasis role="keywordtype">int</emphasis>&#32;taille_CPU,&#32;<emphasis role="keywordtype">int</emphasis>*&#32;tab_ES,&#32;<emphasis role="keywordtype">int</emphasis>&#32;taille_ES);
+64 
+65 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

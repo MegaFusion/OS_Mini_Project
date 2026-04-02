@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="d2/dff/struct_processus" kind="struct" language="C++" prot="public">
+    <compoundname>Processus</compoundname>
+    <includes refid="d2/df0/_proc_struct_8h" local="no">ProcStruct.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/dff/struct_processus_1a5c907c4a6a278e1fa2287f625381c285" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Processus::pid</definition>
+        <argsstring></argsstring>
+        <name>pid</name>
+        <qualifiedname>Processus::pid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="28" column="9" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dff/struct_processus_1a4248efbd13b9394be63391dae15a4b66" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Processus::arrive</definition>
+        <argsstring></argsstring>
+        <name>arrive</name>
+        <qualifiedname>Processus::arrive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="29" column="9" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dff/struct_processus_1a806ad2ddd2773351e88c5f4323d1e777" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+        <definition>Cycle Processus::ES</definition>
+        <argsstring></argsstring>
+        <name>ES</name>
+        <qualifiedname>Processus::ES</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="30" column="11" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dff/struct_processus_1ae29697e7ea4db9386bcfbf0d0956df37" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/df0/_proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1" kindref="member">Cycle</ref></type>
+        <definition>Cycle Processus::CPU</definition>
+        <argsstring></argsstring>
+        <name>CPU</name>
+        <qualifiedname>Processus::CPU</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="31" column="11" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dff/struct_processus_1af4e781dc3f389522f06b41da8e324dda" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Processus::etat</definition>
+        <argsstring></argsstring>
+        <name>etat</name>
+        <qualifiedname>Processus::etat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="32" column="9" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dff/struct_processus_1ade7b41965f58214785f03344697f9a9a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Processus::temps_fin</definition>
+        <argsstring></argsstring>
+        <name>temps_fin</name>
+        <qualifiedname>Processus::temps_fin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="40" column="9" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dff/struct_processus_1a803b6d583bf50ffe633eb57e81366b84" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Processus::temps_CPU</definition>
+        <argsstring></argsstring>
+        <name>temps_CPU</name>
+        <qualifiedname>Processus::temps_CPU</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="41" column="9" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dff/struct_processus_1ade3a5d21ad11ff1669c4f099f0625595" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Processus::temps_ES</definition>
+        <argsstring></argsstring>
+        <name>temps_ES</name>
+        <qualifiedname>Processus::temps_ES</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="42" column="9" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dff/struct_processus_1a6a299b91d8a68e36386c5fd2fa250334" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Processus::temps_premier_CPU</definition>
+        <argsstring></argsstring>
+        <name>temps_premier_CPU</name>
+        <qualifiedname>Processus::temps_premier_CPU</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="43" column="9" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dff/struct_processus_1a8725ff30f67763349cb3229359b5d1eb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Processus::temps_premier_CPU_verif</definition>
+        <argsstring></argsstring>
+        <name>temps_premier_CPU_verif</name>
+        <qualifiedname>Processus::temps_premier_CPU_verif</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="44" column="9" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Processus</label>
+        <link refid="d2/dff/struct_processus"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>CPU</edgelabel>
+          <edgelabel>ES</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cellule</label>
+        <link refid="d7/ddb/structcellule"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>suivant</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" line="19" column="1" bodyfile="C:/Devoir/OS/Projet/Sources/Inc/ProcStruct.h" bodystart="19" bodyend="46"/>
+    <listofallmembers>
+      <member refid="d2/dff/struct_processus_1a4248efbd13b9394be63391dae15a4b66" prot="public" virt="non-virtual"><scope>Processus</scope><name>arrive</name></member>
+      <member refid="d2/dff/struct_processus_1ae29697e7ea4db9386bcfbf0d0956df37" prot="public" virt="non-virtual"><scope>Processus</scope><name>CPU</name></member>
+      <member refid="d2/dff/struct_processus_1a806ad2ddd2773351e88c5f4323d1e777" prot="public" virt="non-virtual"><scope>Processus</scope><name>ES</name></member>
+      <member refid="d2/dff/struct_processus_1af4e781dc3f389522f06b41da8e324dda" prot="public" virt="non-virtual"><scope>Processus</scope><name>etat</name></member>
+      <member refid="d2/dff/struct_processus_1a5c907c4a6a278e1fa2287f625381c285" prot="public" virt="non-virtual"><scope>Processus</scope><name>pid</name></member>
+      <member refid="d2/dff/struct_processus_1a803b6d583bf50ffe633eb57e81366b84" prot="public" virt="non-virtual"><scope>Processus</scope><name>temps_CPU</name></member>
+      <member refid="d2/dff/struct_processus_1ade3a5d21ad11ff1669c4f099f0625595" prot="public" virt="non-virtual"><scope>Processus</scope><name>temps_ES</name></member>
+      <member refid="d2/dff/struct_processus_1ade7b41965f58214785f03344697f9a9a" prot="public" virt="non-virtual"><scope>Processus</scope><name>temps_fin</name></member>
+      <member refid="d2/dff/struct_processus_1a6a299b91d8a68e36386c5fd2fa250334" prot="public" virt="non-virtual"><scope>Processus</scope><name>temps_premier_CPU</name></member>
+      <member refid="d2/dff/struct_processus_1a8725ff30f67763349cb3229359b5d1eb" prot="public" virt="non-virtual"><scope>Processus</scope><name>temps_premier_CPU_verif</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

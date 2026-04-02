@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="df/dcc/_liste_8h" kind="file" language="C++">
+    <compoundname>Liste.h</compoundname>
+    <includes refid="d2/df0/_proc_struct_8h" local="yes">ProcStruct.h</includes>
+    <includedby refid="d0/d93/_calcul__temps_8h" local="yes">C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h</includedby>
+    <includedby refid="df/d81/_s_j_f_8h" local="yes">C:/Devoir/OS/Projet/Sources/Inc/SJF.h</includedby>
+    <includedby refid="d4/d4d/_s_j_r_f_8h" local="yes">C:/Devoir/OS/Projet/Sources/Inc/SJRF.h</includedby>
+    <includedby refid="d8/d1e/lecture__fichier_8h" local="yes">C:/Devoir/OS/Projet/Sources/Inc/lecture_fichier.h</includedby>
+    <includedby refid="df/d34/ordonnancement_8h" local="yes">C:/Devoir/OS/Projet/Sources/Inc/ordonnancement.h</includedby>
+    <includedby refid="de/d94/_liste_8c" local="yes">C:/Devoir/OS/Projet/Sources/Src/Liste.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/Liste.h</label>
+        <link refid="df/dcc/_liste_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProcStruct.h</label>
+        <link refid="d2/df0/_proc_struct_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h</label>
+        <link refid="d0/d93/_calcul__temps_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/Liste.h</label>
+        <link refid="df/dcc/_liste_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/SJF.h</label>
+        <link refid="df/d81/_s_j_f_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/SJRF.h</label>
+        <link refid="d4/d4d/_s_j_r_f_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/lecture_fichier.h</label>
+        <link refid="d8/d1e/lecture__fichier_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/ordonnancement.h</label>
+        <link refid="df/d34/ordonnancement_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c</label>
+        <link refid="de/d6d/_calcul__temps_8c"/>
+      </node>
+      <node id="13">
+        <label>C:/Devoir/OS/Projet/Sources/Src/Liste.c</label>
+        <link refid="de/d94/_liste_8c"/>
+      </node>
+      <node id="8">
+        <label>C:/Devoir/OS/Projet/Sources/Src/SJF.c</label>
+        <link refid="d6/da1/_s_j_f_8c"/>
+      </node>
+      <node id="10">
+        <label>C:/Devoir/OS/Projet/Sources/Src/SJRF.c</label>
+        <link refid="d0/d4e/_s_j_r_f_8c"/>
+      </node>
+      <node id="12">
+        <label>C:/Devoir/OS/Projet/Sources/Src/lecture_fichier.c</label>
+        <link refid="dd/d91/lecture__fichier_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Devoir/OS/Projet/Sources/Src/main.c</label>
+        <link refid="d0/d29/main_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Devoir/OS/Projet/Sources/Src/ordonnancement.c</label>
+        <link refid="df/d89/ordonnancement_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d3/d0b/structcellule_liste" prot="public">celluleListe</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" prot="public" static="no">
+        <type>struct <ref refid="d3/d0b/structcellule_liste" kindref="compound">celluleListe</ref> *</type>
+        <definition>typedef struct celluleListe* Liste</definition>
+        <argsstring></argsstring>
+        <name>Liste</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" line="15" column="7"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="df/dcc/_liste_8h_1ad9827381e304cd3d11a4011bdbb8ea04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int estVideListe</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>estVideListe</name>
+        <param>
+          <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Verifie si la liste est vide, renvoie Vrai si vide ,Faux sinon <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: La <ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref> à vérifier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 ou 0</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" line="17" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Liste.c" bodystart="3" bodyend="10" declfile="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" declline="17" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcc/_liste_8h_1a60520b92603c0b2654ca16733c55c63c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste initListe</definition>
+        <argsstring>()</argsstring>
+        <name>initListe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Initialise une liste vide <simplesect kind="return"><para>une liste vide (NULL)</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" line="18" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Liste.c" bodystart="12" bodyend="18" declfile="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" declline="18" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcc/_liste_8h_1ad1f43f742fcbff1ef357f79283edcda4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+        <definition>Processus procListe</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>procListe</name>
+        <param>
+          <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Renvoie le processus de la cellule en paramètre <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur sur la cellule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le processus courant</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" line="19" column="11" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Liste.c" bodystart="20" bodyend="27" declfile="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" declline="19" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcc/_liste_8h_1ae775edb76409b870341afb33e8ef47df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste suivantListe</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>suivantListe</name>
+        <param>
+          <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Renvoie la cellule suivante de la cellule en paramètre <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur sur la cellule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la cellule suivante</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" line="20" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Liste.c" bodystart="29" bodyend="36" declfile="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" declline="20" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcc/_liste_8h_1ade248ebe678697a4ae00970752e7e394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void supTeteListe</definition>
+        <argsstring>(Liste *l)</argsstring>
+        <name>supTeteListe</name>
+        <param>
+          <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Supprime la tete de la liste, passage par adresse <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: adresse de la liste de processus</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" line="21" column="6" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Liste.c" bodystart="38" bodyend="51" declfile="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcc/_liste_8h_1a7897671180b2d1e67b0ac9ddbff0d03e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste inserTeteListe</definition>
+        <argsstring>(Liste l, Processus p)</argsstring>
+        <name>inserTeteListe</name>
+        <param>
+          <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Ajoute une cellule à la tête de la liste donnée <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur sur la liste </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le processus contenu dans la cellule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>La liste mis à jour</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" line="22" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Liste.c" bodystart="53" bodyend="69" declfile="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" declline="22" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcc/_liste_8h_1a065b219bb5d73ee1c92080a887fb11c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste inserProcListe</definition>
+        <argsstring>(Liste l, Processus p)</argsstring>
+        <name>inserProcListe</name>
+        <param>
+          <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Insertition en queue d&apos;une liste <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la <ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref> de processus </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le processus à ajouter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>La liste mis à jour</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" line="23" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Liste.c" bodystart="70" bodyend="86" declfile="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" declline="23" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcc/_liste_8h_1a5ac1eea0342cafb8bb1c7d9dd5c25235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int supElement</definition>
+        <argsstring>(Liste *l, int pid)</argsstring>
+        <name>supElement</name>
+        <param>
+          <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Supprime une cellule dans une liste de processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: La liste de processus </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: numéro du processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Une verification : 1 si le processus est trouvé, 0 sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" line="24" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Liste.c" bodystart="88" bodyend="105" declfile="C:/Devoir/OS/Projet/Sources/Inc/Liste.h" declline="24" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LISTE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LISTE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/df0/_proc_struct_8h" kindref="compound">ProcStruct.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d3/d0b/structcellule_liste" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d3/d0b/structcellule_liste" kindref="compound">celluleListe</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d3/d0b/structcellule_liste_1a8e2db23d1b77936913f80f7aa42552b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/><ref refid="d3/d0b/structcellule_liste_1a8e2db23d1b77936913f80f7aa42552b1" kindref="member">proc</ref>;</highlight></codeline>
+<codeline lineno="14" refid="d3/d0b/structcellule_liste_1a0dfc7db9d5534dfe71ac1563b2205935" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d3/d0b/structcellule_liste" kindref="compound">celluleListe</ref>*<sp/><ref refid="d3/d0b/structcellule_liste_1a0dfc7db9d5534dfe71ac1563b2205935" kindref="member">suivant</ref>;</highlight></codeline>
+<codeline lineno="15" refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" refkind="member"><highlight class="normal">}*<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="df/dcc/_liste_8h_1ad9827381e304cd3d11a4011bdbb8ea04" kindref="member">estVideListe</ref>(<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="df/dcc/_liste_8h_1a60520b92603c0b2654ca16733c55c63c" kindref="member">initListe</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/><ref refid="df/dcc/_liste_8h_1ad1f43f742fcbff1ef357f79283edcda4" kindref="member">procListe</ref>(<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="df/dcc/_liste_8h_1ae775edb76409b870341afb33e8ef47df" kindref="member">suivantListe</ref>(<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/dcc/_liste_8h_1ade248ebe678697a4ae00970752e7e394" kindref="member">supTeteListe</ref>(<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>*l);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="df/dcc/_liste_8h_1a7897671180b2d1e67b0ac9ddbff0d03e" kindref="member">inserTeteListe</ref>(<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l,<sp/><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="df/dcc/_liste_8h_1a065b219bb5d73ee1c92080a887fb11c2" kindref="member">inserProcListe</ref>(<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l,<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="df/dcc/_liste_8h_1a5ac1eea0342cafb8bb1c7d9dd5c25235" kindref="member">supElement</ref>(<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref>*<sp/>l,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pid);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Devoir/OS/Projet/Sources/Inc/Liste.h"/>
+  </compounddef>
+</doxygen>

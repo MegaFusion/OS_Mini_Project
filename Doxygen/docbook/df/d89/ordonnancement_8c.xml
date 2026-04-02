@@ -1,0 +1,617 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_ordonnancement_8c" xml:lang="en-US">
+<title>C:/Devoir/OS/Projet/Sources/Src/ordonnancement.c File Reference</title>
+<indexterm><primary>C:/Devoir/OS/Projet/Sources/Src/ordonnancement.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;ordonnancement.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_ordonnancement_8c_1a1291f416b069313021b519eea62d5bf1">NORMAL</link>&#160;&#160;&#160;&quot;\033[0m&quot;</para>
+</listitem>
+            <listitem><para>#define <link linkend="_ordonnancement_8c_1a05bf9502e18ff1dc88efd4fb9076b2e9">TOUT</link>&#160;&#160;&#160;&quot;\033[1m&quot;</para>
+</listitem>
+            <listitem><para>#define <link linkend="_ordonnancement_8c_1a22c2b7cb14b1ffb516a9ed4a164b5cda">VERT</link>&#160;&#160;&#160;&quot;\033[1;32m&quot;</para>
+</listitem>
+            <listitem><para>#define <link linkend="_ordonnancement_8c_1a34c109ff6a0293c4706defe141ef7e0c">JAUNE</link>&#160;&#160;&#160;&quot;\033[1;33m&quot;</para>
+</listitem>
+            <listitem><para>#define <link linkend="_ordonnancement_8c_1a358a59dd21062085dd34d5c228c5f136">ROUGE</link>&#160;&#160;&#160;&quot;\033[1;31m&quot;</para>
+</listitem>
+            <listitem><para>#define <link linkend="_ordonnancement_8c_1a928ad872921809adddfdd7f5d260fac0">VIOLET</link>&#160;&#160;&#160;&quot;\033[1;35m&quot;</para>
+</listitem>
+            <listitem><para>#define <link linkend="_ordonnancement_8c_1ae22837728df88da892b4bb16bb98296d">BLEU</link>&#160;&#160;&#160;&quot;\033[1;34m&quot;</para>
+</listitem>
+            <listitem><para>#define <link linkend="_ordonnancement_8c_1a4371941fa5aa27c04b3e2b973c39f4b0">BLANC</link>&#160;&#160;&#160;&quot;\033[1;37m&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1a1d03b7255dc769fc270c061f1e0a54ca">afficher_entete</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1a252c2db3345d8216b20049de4b0a83c8">ecrire_entete</link> (FILE *csv, <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</para>
+</listitem>
+            <listitem><para><link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> <link linkend="_ordonnancement_8c_1a3abb41f5a152c3a452647d6e85afe7d9">chercher_premier_pret</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> l)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1a4a4f88a882fccf1a8a0ee6a2e4aeaa3e">afficher_ligne</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste, int temps)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1af43baddc0b0f81caa706216cc558bbe6">ecrire_ligne</link> (FILE *csv, <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste, int temps)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1a98ef231d93d366df409f3a9f7b889b23">afficher_restitution</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1a52b3fee32bda024c781e553074f31096">afficher_attente</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1a01f3fee41bc2e883689edef623b990b9">afficher_reponse</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1af2c42fbb9cefa361474f1ed57a90f473">afficher_restitution_moyen</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1a5418d241f133d31742109676684a80ab">afficher_attente_moyen</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1aacf5ed4d698947887c01eb1531534c4e">afficher_reponse_moyen</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1a20dfc8d39a19f6b5dd4268b6b661bc35">afficher_occupation</link> (int temps_CPU_actif, int temps_total, <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</para>
+</listitem>
+            <listitem><para>void <link linkend="_ordonnancement_8c_1a4ab29d98f48674a2016cd9d6984dccff">ecrire_indicateurs</link> (FILE *csv, <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste, int temps_CPU_actif, int temps_total)</para>
+</listitem>
+            <listitem><para><link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> <link linkend="_ordonnancement_8c_1a6d1156677eca469b90e98273c0c0a1bd">trier_par_arrivee</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> l)</para>
+</listitem>
+            <listitem><para>int <link linkend="_ordonnancement_8c_1a7e6baea19b1b702bababfd0edc4f9e7e">tous_termines_file</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> l)</para>
+</listitem>
+            <listitem><para>int <link linkend="_ordonnancement_8c_1a7d07bd0bf9a00dd25dd1377c559d9568">ordonnancer</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> *liste, int algo, int quantum, int export_csv)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_ordonnancement_8c_1a4371941fa5aa27c04b3e2b973c39f4b0"/><section>
+    <title>BLANC</title>
+<indexterm><primary>BLANC</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>BLANC</secondary></indexterm>
+<para><computeroutput>#define BLANC&#160;&#160;&#160;&quot;\033[1;37m&quot;</computeroutput></para></section>
+<anchor xml:id="_ordonnancement_8c_1ae22837728df88da892b4bb16bb98296d"/><section>
+    <title>BLEU</title>
+<indexterm><primary>BLEU</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>BLEU</secondary></indexterm>
+<para><computeroutput>#define BLEU&#160;&#160;&#160;&quot;\033[1;34m&quot;</computeroutput></para></section>
+<anchor xml:id="_ordonnancement_8c_1a34c109ff6a0293c4706defe141ef7e0c"/><section>
+    <title>JAUNE</title>
+<indexterm><primary>JAUNE</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>JAUNE</secondary></indexterm>
+<para><computeroutput>#define JAUNE&#160;&#160;&#160;&quot;\033[1;33m&quot;</computeroutput></para></section>
+<anchor xml:id="_ordonnancement_8c_1a1291f416b069313021b519eea62d5bf1"/><section>
+    <title>NORMAL</title>
+<indexterm><primary>NORMAL</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>NORMAL</secondary></indexterm>
+<para><computeroutput>#define NORMAL&#160;&#160;&#160;&quot;\033[0m&quot;</computeroutput></para></section>
+<anchor xml:id="_ordonnancement_8c_1a358a59dd21062085dd34d5c228c5f136"/><section>
+    <title>ROUGE</title>
+<indexterm><primary>ROUGE</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>ROUGE</secondary></indexterm>
+<para><computeroutput>#define ROUGE&#160;&#160;&#160;&quot;\033[1;31m&quot;</computeroutput></para></section>
+<anchor xml:id="_ordonnancement_8c_1a05bf9502e18ff1dc88efd4fb9076b2e9"/><section>
+    <title>TOUT</title>
+<indexterm><primary>TOUT</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>TOUT</secondary></indexterm>
+<para><computeroutput>#define TOUT&#160;&#160;&#160;&quot;\033[1m&quot;</computeroutput></para></section>
+<anchor xml:id="_ordonnancement_8c_1a22c2b7cb14b1ffb516a9ed4a164b5cda"/><section>
+    <title>VERT</title>
+<indexterm><primary>VERT</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>VERT</secondary></indexterm>
+<para><computeroutput>#define VERT&#160;&#160;&#160;&quot;\033[1;32m&quot;</computeroutput></para></section>
+<anchor xml:id="_ordonnancement_8c_1a928ad872921809adddfdd7f5d260fac0"/><section>
+    <title>VIOLET</title>
+<indexterm><primary>VIOLET</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>VIOLET</secondary></indexterm>
+<para><computeroutput>#define VIOLET&#160;&#160;&#160;&quot;\033[1;35m&quot;</computeroutput></para></section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_ordonnancement_8c_1a52b3fee32bda024c781e553074f31096"/><section>
+    <title>afficher_attente()</title>
+<indexterm><primary>afficher_attente</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>afficher_attente</secondary></indexterm>
+<para><computeroutput>void afficher_attente (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</computeroutput></para>
+<para>Afficher le temps d&apos;attente d&apos;un processus 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste de processus</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a5418d241f133d31742109676684a80ab"/><section>
+    <title>afficher_attente_moyen()</title>
+<indexterm><primary>afficher_attente_moyen</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>afficher_attente_moyen</secondary></indexterm>
+<para><computeroutput>void afficher_attente_moyen (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</computeroutput></para>
+<para>Afficher le temps d&apos;attente moyen d&apos;un ordonnancement 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste de processus</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a1d03b7255dc769fc270c061f1e0a54ca"/><section>
+    <title>afficher_entete()</title>
+<indexterm><primary>afficher_entete</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>afficher_entete</secondary></indexterm>
+<para><computeroutput>void afficher_entete (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</computeroutput></para>
+<para>Affiche l&apos;en tête du tableau 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste des processus</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a4a4f88a882fccf1a8a0ee6a2e4aeaa3e"/><section>
+    <title>afficher_ligne()</title>
+<indexterm><primary>afficher_ligne</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>afficher_ligne</secondary></indexterm>
+<para><computeroutput>void afficher_ligne (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste, int temps)</computeroutput></para>
+<para>Affiche une ligne des informations de l&apos;ordonnancement en fonction du temps 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste des processus </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temps</entry><entry>
+<para>: temps de l&apos;ordonnancement</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a20dfc8d39a19f6b5dd4268b6b661bc35"/><section>
+    <title>afficher_occupation()</title>
+<indexterm><primary>afficher_occupation</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>afficher_occupation</secondary></indexterm>
+<para><computeroutput>void afficher_occupation (int temps_CPU_actif, int temps_total, <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</computeroutput></para>
+<para>Afficher le temps d&apos;occupation moyen du système durant un ordonnancement 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste de processus </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temps_CPU_actif</entry><entry>
+<para>: temps où le CPU est resté occupé </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temps_total</entry><entry>
+<para>: temps total de l&apos;ordonnancement</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a01f3fee41bc2e883689edef623b990b9"/><section>
+    <title>afficher_reponse()</title>
+<indexterm><primary>afficher_reponse</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>afficher_reponse</secondary></indexterm>
+<para><computeroutput>void afficher_reponse (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</computeroutput></para>
+<para>Afficher le temps de reponse d&apos;un processus 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste de processus</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1aacf5ed4d698947887c01eb1531534c4e"/><section>
+    <title>afficher_reponse_moyen()</title>
+<indexterm><primary>afficher_reponse_moyen</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>afficher_reponse_moyen</secondary></indexterm>
+<para><computeroutput>void afficher_reponse_moyen (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</computeroutput></para>
+<para>Afficher le temps de reponse moyen d&apos;un ordonnancement 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste de processus</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a98ef231d93d366df409f3a9f7b889b23"/><section>
+    <title>afficher_restitution()</title>
+<indexterm><primary>afficher_restitution</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>afficher_restitution</secondary></indexterm>
+<para><computeroutput>void afficher_restitution (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</computeroutput></para>
+<para>Afficher le temps de restitution d&apos;un processus 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste de processus</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1af2c42fbb9cefa361474f1ed57a90f473"/><section>
+    <title>afficher_restitution_moyen()</title>
+<indexterm><primary>afficher_restitution_moyen</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>afficher_restitution_moyen</secondary></indexterm>
+<para><computeroutput>void afficher_restitution_moyen (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</computeroutput></para>
+<para>Afficher le temps de restitution moyen d&apos;un ordonnancement 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste de processus</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a3abb41f5a152c3a452647d6e85afe7d9"/><section>
+    <title>chercher_premier_pret()</title>
+<indexterm><primary>chercher_premier_pret</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>chercher_premier_pret</secondary></indexterm>
+<para><computeroutput><link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> chercher_premier_pret (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> l)</computeroutput></para>
+<para>Parcourt une liste de processus et renvoie le premier processus prêt 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>l</entry><entry>
+<para>: La liste de processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Si un processus prêt trouvé et prioritaire, renvoie ce dernier. NULL sinon</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a252c2db3345d8216b20049de4b0a83c8"/><section>
+    <title>ecrire_entete()</title>
+<indexterm><primary>ecrire_entete</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>ecrire_entete</secondary></indexterm>
+<para><computeroutput>void ecrire_entete (FILE * csv, <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste)</computeroutput></para>
+<para>Écrit l&apos;en-tête du tableau dans le fichier CSV 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>csv</entry><entry>
+<para>: fichier CSV </para>
+</entry>
+                            </row>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste des processus</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a4ab29d98f48674a2016cd9d6984dccff"/><section>
+    <title>ecrire_indicateurs()</title>
+<indexterm><primary>ecrire_indicateurs</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>ecrire_indicateurs</secondary></indexterm>
+<para><computeroutput>void ecrire_indicateurs (FILE * csv, <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste, int temps_CPU_actif, int temps_total)</computeroutput></para>
+<para>Écrit les indicateurs de performance dans le fichier CSV 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>csv</entry><entry>
+<para>: fichier CSV </para>
+</entry>
+                            </row>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste des processus </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temps_CPU_actif</entry><entry>
+<para>: temps total où le CPU est resté occupé </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temps_total</entry><entry>
+<para>: temps total de l&apos;ordonnancement</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1af43baddc0b0f81caa706216cc558bbe6"/><section>
+    <title>ecrire_ligne()</title>
+<indexterm><primary>ecrire_ligne</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>ecrire_ligne</secondary></indexterm>
+<para><computeroutput>void ecrire_ligne (FILE * csv, <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> liste, int temps)</computeroutput></para>
+<para>Écrit une ligne de l&apos;ordonnancement dans le fichier CSV 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>csv</entry><entry>
+<para>: fichier CSV </para>
+</entry>
+                            </row>
+                            <row>
+<entry>liste</entry><entry>
+<para>: la liste des processus </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temps</entry><entry>
+<para>: temps de l&apos;ordonnancement</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a7d07bd0bf9a00dd25dd1377c559d9568"/><section>
+    <title>ordonnancer()</title>
+<indexterm><primary>ordonnancer</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>ordonnancer</secondary></indexterm>
+<para><computeroutput>int ordonnancer (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> * liste, int algo, int quantum, int export_csv)</computeroutput></para>
+<para>Ordonnancement d&apos;une liste de processus selon l&apos;algorithme choisi. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>liste</entry><entry>
+<para>: adresse de la liste de processus </para>
+</entry>
+                            </row>
+                            <row>
+<entry>algo</entry><entry>
+<para>: algorithme (ALGO_FIFO=0, ALGO_SJF=1, ALGO_SJRF=2, ALGO_RR=3) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>quantum</entry><entry>
+<para>: durée du quantum pour RR (ignoré sinon) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>export_csv</entry><entry>
+<para>: 1 pour sauvegarder en CSV, 0 sinon </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>0 si tout s&apos;est bien passé</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a7e6baea19b1b702bababfd0edc4f9e7e"/><section>
+    <title>tous_termines_file()</title>
+<indexterm><primary>tous_termines_file</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>tous_termines_file</secondary></indexterm>
+<para><computeroutput>int tous_termines_file (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> l)</computeroutput></para>
+<para>Verifie si tous les processus d&apos;une liste sont tous terminés 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>l</entry><entry>
+<para>: <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> de processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>1 si oui, 0 sinon</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_ordonnancement_8c_1a6d1156677eca469b90e98273c0c0a1bd"/><section>
+    <title>trier_par_arrivee()</title>
+<indexterm><primary>trier_par_arrivee</primary><secondary>ordonnancement.c</secondary></indexterm>
+<indexterm><primary>ordonnancement.c</primary><secondary>trier_par_arrivee</secondary></indexterm>
+<para><computeroutput><link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> trier_par_arrivee (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> l)</computeroutput></para>
+<para>Trie une liste de processus par ordre d&apos;arrivée 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>l</entry><entry>
+<para>: la liste à trier </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>la liste triée</para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

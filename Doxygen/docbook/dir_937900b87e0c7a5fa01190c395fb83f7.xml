@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_937900b87e0c7a5fa01190c395fb83f7" xml:lang="en-US">
+<title>C:/Devoir/OS/Projet/Sources Directory Reference</title>
+<indexterm><primary>C:/Devoir/OS/Projet/Sources Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_5e28ad7b40029de8eab7e6a37f98bb64">Inc</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_597d40229dfb7409f7fbd731738e79b4">Src</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

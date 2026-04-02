@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__s_j_f_8h" xml:lang="en-US">
+<title>C:/Devoir/OS/Projet/Sources/Inc/SJF.h File Reference</title>
+<indexterm><primary>C:/Devoir/OS/Projet/Sources/Inc/SJF.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;Liste.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> <link linkend="__s_j_f_8h_1ac3d5d6c3c1da92b6d6d050535aa26b91">chercher_sjf</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> l)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__s_j_f_8h_1ac3d5d6c3c1da92b6d6d050535aa26b91"/><section>
+    <title>chercher_sjf()</title>
+<indexterm><primary>chercher_sjf</primary><secondary>SJF.h</secondary></indexterm>
+<indexterm><primary>SJF.h</primary><secondary>chercher_sjf</secondary></indexterm>
+<para><computeroutput><link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> chercher_sjf (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> l)</computeroutput></para>
+<para>Parcourt une liste de processus et renvoie le processus prêt avec le plus petit temps d&apos;éxecution 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>l</entry><entry>
+<para>: La liste de processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Le processus prêt avec le temps d&apos;éxecution le plus court, NULL sinon</para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

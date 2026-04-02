@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="d0/d93/_calcul__temps_8h" kind="file" language="C++">
+    <compoundname>Calcul_temps.h</compoundname>
+    <includes refid="d2/df0/_proc_struct_8h" local="yes">ProcStruct.h</includes>
+    <includes refid="df/dcc/_liste_8h" local="yes">Liste.h</includes>
+    <includedby refid="df/d34/ordonnancement_8h" local="yes">C:/Devoir/OS/Projet/Sources/Inc/ordonnancement.h</includedby>
+    <includedby refid="de/d6d/_calcul__temps_8c" local="yes">C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h</label>
+        <link refid="d0/d93/_calcul__temps_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Liste.h</label>
+        <link refid="df/dcc/_liste_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProcStruct.h</label>
+        <link refid="d2/df0/_proc_struct_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h</label>
+        <link refid="d0/d93/_calcul__temps_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Devoir/OS/Projet/Sources/Inc/ordonnancement.h</label>
+        <link refid="df/d34/ordonnancement_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c</label>
+        <link refid="de/d6d/_calcul__temps_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Devoir/OS/Projet/Sources/Src/main.c</label>
+        <link refid="d0/d29/main_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Devoir/OS/Projet/Sources/Src/ordonnancement.c</label>
+        <link refid="df/d89/ordonnancement_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="d0/d93/_calcul__temps_8h_1a34f9814e13dbb5dd54b751247aeab052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Proc_temps_restitution</definition>
+        <argsstring>(Processus p)</argsstring>
+        <name>Proc_temps_restitution</name>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul du temps de restitution d&apos;un processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le temps total passé par le processus dans le système</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" line="7" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c" bodystart="3" bodyend="10" declfile="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" declline="7" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d93/_calcul__temps_8h_1a70424ef7c645996edf5c7495312e001d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Proc_temps_attente</definition>
+        <argsstring>(Processus p)</argsstring>
+        <name>Proc_temps_attente</name>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul du temps d&apos;attente d&apos;un processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le temps total passé par le processus dans le système en état prêt</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" line="8" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c" bodystart="12" bodyend="19" declfile="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" declline="8" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d93/_calcul__temps_8h_1a8169a6f504ba5c8b4afca7e69a045a2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Proc_temps_reponse</definition>
+        <argsstring>(Processus p)</argsstring>
+        <name>Proc_temps_reponse</name>
+        <param>
+          <type><ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul du temps de réponse d&apos;un processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le temps d&apos;attente du processus depuis son arrivée dans le système jusqu&apos;au premier passage à l&apos;état &quot;en_cours&quot;</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" line="9" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c" bodystart="21" bodyend="28" declfile="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" declline="9" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d93/_calcul__temps_8h_1a8e044dcecf3ba94bcac95d2c756bfd38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int restitution_moyen</definition>
+        <argsstring>(Liste liste)</argsstring>
+        <name>restitution_moyen</name>
+        <param>
+          <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul du temps de restitution moyen de l&apos;ordonnancement <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste des processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le temps de restitution moyen</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" line="10" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c" bodystart="40" bodyend="55" declfile="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" declline="10" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d93/_calcul__temps_8h_1a3a11cf7b5dc239b8a52b23d3816c2613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int attente_moyen</definition>
+        <argsstring>(Liste liste)</argsstring>
+        <name>attente_moyen</name>
+        <param>
+          <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul du temps de attente moyen de l&apos;ordonnancement <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste des processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le temps de attente moyen</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" line="11" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c" bodystart="73" bodyend="88" declfile="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" declline="11" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d93/_calcul__temps_8h_1a3610e0ba5e3ecaa81fd94817c87745d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int reponse_moyen</definition>
+        <argsstring>(Liste liste)</argsstring>
+        <name>reponse_moyen</name>
+        <param>
+          <type><ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul du temps de reponse moyen de l&apos;ordonnancement <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste des processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le temps de reponse moyen</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" line="12" column="5" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c" bodystart="56" bodyend="72" declfile="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" declline="12" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d93/_calcul__temps_8h_1a4e1ef3892d63f08178089b4f21349bcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Taux_occupation</definition>
+        <argsstring>(int temps_CPU_actif, int temps_total)</argsstring>
+        <name>Taux_occupation</name>
+        <param>
+          <type>int</type>
+          <declname>temps_CPU_actif</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>temps_total</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul du taux d&apos;occupation du CPU par les processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>temps_CPU_actif</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: temps où le CPU est resté occupé </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temps_total</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: temps total de l&apos;ordonnancement </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>taux d&apos;occupation du CPU par rapport au temps total d&apos;ordonnancement en pourcentage</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" line="13" column="7" bodyfile="C:/Devoir/OS/Projet/Sources/Src/Calcul_temps.c" bodystart="30" bodyend="38" declfile="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h" declline="13" declcolumn="7"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CALCUL_TEMPS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CALCUL_TEMPS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/df0/_proc_struct_8h" kindref="compound">ProcStruct.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/dcc/_liste_8h" kindref="compound">Liste.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d93/_calcul__temps_8h_1a34f9814e13dbb5dd54b751247aeab052" kindref="member">Proc_temps_restitution</ref>(<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d93/_calcul__temps_8h_1a70424ef7c645996edf5c7495312e001d" kindref="member">Proc_temps_attente</ref>(<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d93/_calcul__temps_8h_1a8169a6f504ba5c8b4afca7e69a045a2b" kindref="member">Proc_temps_reponse</ref>(<ref refid="d2/dff/struct_processus" kindref="compound">Processus</ref><sp/>p);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d93/_calcul__temps_8h_1a8e044dcecf3ba94bcac95d2c756bfd38" kindref="member">restitution_moyen</ref>(<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>liste);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d93/_calcul__temps_8h_1a3a11cf7b5dc239b8a52b23d3816c2613" kindref="member">attente_moyen</ref>(<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>liste);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d93/_calcul__temps_8h_1a3610e0ba5e3ecaa81fd94817c87745d9" kindref="member">reponse_moyen</ref>(<ref refid="df/dcc/_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>liste);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d0/d93/_calcul__temps_8h_1a4e1ef3892d63f08178089b4f21349bcc" kindref="member">Taux_occupation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temps_CPU_actif,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temps_total);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Devoir/OS/Projet/Sources/Inc/Calcul_temps.h"/>
+  </compounddef>
+</doxygen>

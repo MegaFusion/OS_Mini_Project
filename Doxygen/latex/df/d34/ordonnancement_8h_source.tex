@@ -1,0 +1,35 @@
+\doxysection{ordonnancement.\+h}
+\label{ordonnancement_8h_source}\index{C:/Devoir/OS/Projet/Sources/Inc/ordonnancement.h@{C:/Devoir/OS/Projet/Sources/Inc/ordonnancement.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ORDONNANCEMENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ORDONNANCEMENT\_H}}
+\DoxyCodeLine{00003\ \ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Liste.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}SJF.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}SJRF.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Calcul\_temps.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ ALGO\_FIFO\ 0}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ ALGO\_SJF\ \ 1}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ ALGO\_SJRF\ 2}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ ALGO\_RR\ \ \ 3}}
+\DoxyCodeLine{00014\ \ }
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{void}\ afficher\_entete(Liste\ liste);}
+\DoxyCodeLine{00016\ \textcolor{keywordtype}{void}\ afficher\_ligne(Liste\ liste,\ \textcolor{keywordtype}{int}\ temps);}
+\DoxyCodeLine{00017\ Liste\ trier\_par\_arrivee(Liste\ l);}
+\DoxyCodeLine{00018\ Liste\ chercher\_premier\_pret(Liste\ l);}
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{int}\ tous\_termines\_file(Liste\ l);}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{void}\ afficher\_restitution(Liste\ l);}
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{void}\ afficher\_attente(Liste\ l);}
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{void}\ afficher\_reponse(Liste\ l);}
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{void}\ afficher\_restitution\_moyen(Liste\ liste);}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ afficher\_attente\_moyen(Liste\ liste);}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ afficher\_reponse\_moyen(Liste\ liste);}
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{void}\ afficher\_occupation(\textcolor{keywordtype}{int}\ temps\_CPU\_actif,\ \textcolor{keywordtype}{int}\ temps\_total,\ Liste\ liste);}
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{int}\ ordonnancer(Liste\ *liste,\ \textcolor{keywordtype}{int}\ algo,\ \textcolor{keywordtype}{int}\ quantum,\ \textcolor{keywordtype}{int}\ csv);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
