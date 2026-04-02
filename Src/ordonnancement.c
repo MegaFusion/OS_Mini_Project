@@ -190,7 +190,7 @@ void afficher_restitution_moyen(Liste liste){
     }
     printf("\n");
     printf(VERT "%-14s" NORMAL, "Restitution_M");
-    printf(" %d \n", restitution_moyen(liste));
+    printf(" %.2f \n", restitution_moyen(liste));
 }
 
 void afficher_attente_moyen(Liste liste){
@@ -206,7 +206,7 @@ void afficher_attente_moyen(Liste liste){
     }
     printf("\n");
     printf(VERT "%-14s" NORMAL, "Attente_M");
-    printf(" %d \n", attente_moyen(liste));
+    printf(" %.2f \n", attente_moyen(liste));
 }
 
 void afficher_reponse_moyen(Liste liste){
@@ -222,7 +222,7 @@ void afficher_reponse_moyen(Liste liste){
     }
     printf("\n");
     printf(VERT "%-14s" NORMAL, "Reponse_M");
-    printf(" %d \n", reponse_moyen(liste));
+    printf(" %.2f \n", reponse_moyen(liste));
 }
 
 void afficher_occupation(int temps_CPU_actif, int temps_total, Liste liste){
@@ -294,21 +294,21 @@ void ecrire_indicateurs(FILE *csv, Liste liste,
     fprintf(csv, "\n");
 
     /* t_restitution moyen */
-    fprintf(csv, "t_restitution moyen");
+    fprintf(csv, "t_restitution_moyen");
     l = liste;
-        fprintf(csv, "\t%d", restitution_moyen(l));
+        fprintf(csv, "\t%.2f", restitution_moyen(l));
     fprintf(csv, "\n");
 
     /* t_attente moyen */
-    fprintf(csv, "t_attente moyen");
+    fprintf(csv, "t_attente_moyen");
     l = liste;
-        fprintf(csv, "\t%d", restitution_moyen(l));
+        fprintf(csv, "\t%.2f", attente_moyen(l));
     fprintf(csv, "\n");
 
     /* t_reponse moyen */
-    fprintf(csv, "t_reponse moyen");
+    fprintf(csv, "t_reponse_moyen");
     l = liste;
-        fprintf(csv, "\t%d", reponse_moyen(l));
+        fprintf(csv, "\t%.2f", reponse_moyen(l));
     fprintf(csv, "\n");
 
     /* taux occupation */

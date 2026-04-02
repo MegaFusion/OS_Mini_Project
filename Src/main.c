@@ -35,9 +35,9 @@ Liste creer_liste_defaut(){
     int ES3[]  = {1};
     int CPU3[] = {2, 3};
 
-    liste = inserProcListe(liste, initProc(1, 0, ES1, 1, CPU1, 2));
-    liste = inserProcListe(liste, initProc(2, 1, ES2, 1, CPU2, 2));
-    liste = inserProcListe(liste, initProc(3, 2, ES3, 1, CPU3, 2));
+    liste = inserProcListe(liste, initProc(1, 0, CPU1, 2, ES1, 1));
+    liste = inserProcListe(liste, initProc(2, 1, CPU2, 2, ES2, 1));
+    liste = inserProcListe(liste, initProc(3, 2, CPU3, 2, ES3, 1));
 
     return liste;
 }

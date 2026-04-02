@@ -7,9 +7,9 @@
 int Proc_temps_restitution(Processus p);
 int Proc_temps_attente(Processus p);
 int Proc_temps_reponse(Processus p);
-int restitution_moyen(Liste liste);
-int attente_moyen(Liste liste);
-int reponse_moyen(Liste liste);
+float restitution_moyen(Liste liste);
+float attente_moyen(Liste liste);
+float reponse_moyen(Liste liste);
 float Taux_occupation(int temps_CPU_actif, int temps_total);
 
 #endif
