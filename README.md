@@ -16,7 +16,10 @@ Simulateur pédagogique d'algorithmes d'ordonnancement de processus écrit en C.
 - **Export CSV** des résultats
 - **Chargement depuis fichier** ou processus de test par défaut
 
-
+## Installation
+- Ouvrir et se mettre dans le dossier **Src** en invité de commande
+- entrer `make` pour produire le fichier le fichier exécutable
+- entrer `./main` avec des arguments pour lancer le programme
 ## Compilation
 
 ```bash
