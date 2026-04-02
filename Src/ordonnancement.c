@@ -452,7 +452,6 @@ int ordonnancer(Liste *liste, int algo, int quantum, int export_csv){
                 else{
                     courant->proc.etat  = 4;
                     courant->proc.temps_fin = temps;
-                    courant = NULL;
                 }
 
                 cpu_libre      = 1;
