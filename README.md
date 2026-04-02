@@ -39,21 +39,21 @@ Requiert `gcc` avec les flags `-Wall -Wextra`.
 
 ### Algorithmes
 
-| Option | Description |
-|
-| `-a FIFO` | First In First Out (non préemptif) |
-| `-a SJF` | Shortest Job First (non préemptif) |
-| `-a SJRF` | Shortest Job Remaining First (préemptif) |
-| `-a RR` | Round Robin |
+- | Option | Description |
+
+- | `-a FIFO` | First In First Out (non préemptif) |
+- | `-a SJF` | Shortest Job First (non préemptif) |
+- | `-a SJRF` | Shortest Job Remaining First (préemptif) |
+- | `-a RR` | Round Robin |
 
 ### Options
 
-| Option | Description |
-|
-| `-q <n>` | Quantum pour RR (défaut : 2) |
-| `-f <fichier>` | Charger les processus depuis un fichier |
-| `-csv` | Sauvegarder les résultats dans un fichier CSV |
-| `-h` | Afficher l'aide |
+- | Option | Description |
+
+- | `-q <n>` | Quantum pour RR (défaut : 2) |
+- | `-f <fichier>` | Charger les processus depuis un fichier |
+- | `-csv` | Sauvegarder les résultats dans un fichier CSV |
+- | `-h` | Afficher l'aide |
 
 ### Exemples
 
@@ -137,10 +137,10 @@ T_occupation   85.00 %
 
 ## États d'un processus
 
-| Code | État | Couleur |
-|
-| ` | Non arrivé | Blanc |
-| `PRT` | Prêt | Jaune |
-| `CPU` | En cours d'exécution | Bleu |
-| `BLQ` | Bloqué (E/S) | Violet |
-| `FIN` | Terminé | Vert |
+- | Code | État | Couleur |
+
+- | ` | Non arrivé | Blanc |
+- | `PRT` | Prêt | Jaune |
+- | `CPU` | En cours d'exécution | Bleu |
+- | `BLQ` | Bloqué (E/S) | Violet |
+- | `FIN` | Terminé | Vert |
