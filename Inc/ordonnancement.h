@@ -20,6 +20,9 @@ int tous_termines_file(Liste l);
 void afficher_restitution(Liste l);
 void afficher_attente(Liste l);
 void afficher_reponse(Liste l);
+void afficher_restitution_moyen(Liste liste);
+void afficher_attente_moyen(Liste liste);
+void afficher_reponse_moyen(Liste liste);
 void afficher_occupation(int temps_CPU_actif, int temps_total, Liste liste);
 int ordonnancer(Liste *liste, int algo, int quantum, int csv);
 

@@ -3,6 +3,9 @@
 #include <string.h>
 
 void afficher_aide(){
+    /**
+     * Afficher le texte d'aide pour l'utilisation en invité de commande après l'option -h
+     */
     printf("Usage : ./main -a <ALGO> [options]\n\n");
     printf("Algorithmes :\n");
     printf("  -a FIFO          Ordonnancement FIFO\n");
@@ -46,7 +49,7 @@ int main(int argc, char *argv[]){
     int   export_csv  = 0;
     char *fichier     = NULL;
 
-    /* ── Parsing des arguments ── */
+    /* Parsing des arguments */
     for (int i = 1; i < argc; i++){
 
         if (strcmp(argv[i], "-h") == 0){
