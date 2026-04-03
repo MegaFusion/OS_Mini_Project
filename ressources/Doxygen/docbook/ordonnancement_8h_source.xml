@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_ordonnancement_8h_source" xml:lang="en-US">
+<title>ordonnancement.h</title>
+<indexterm><primary>C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;ORDONNANCEMENT_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;ORDONNANCEMENT_H</emphasis>
+3 &#32;
+4 <emphasis role="preprocessor">#include&#32;&lt;unistd.h&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__liste_8h">Liste.h</link>&quot;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__s_j_f_8h">SJF.h</link>&quot;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__s_j_r_f_8h">SJRF.h</link>&quot;</emphasis>
+8 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__calcul__temps_8h">Calcul_temps.h</link>&quot;</emphasis>
+9 
+10 <emphasis role="preprocessor">#define&#32;ALGO_FIFO&#32;0</emphasis>
+11 <emphasis role="preprocessor">#define&#32;ALGO_SJF&#32;&#32;1</emphasis>
+12 <emphasis role="preprocessor">#define&#32;ALGO_SJRF&#32;2</emphasis>
+13 <emphasis role="preprocessor">#define&#32;ALGO_RR&#32;&#32;&#32;3</emphasis>
+14 &#32;
+15 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_ordonnancement_8h_1a1d03b7255dc769fc270c061f1e0a54ca">afficher_entete</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;liste);
+16 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_ordonnancement_8h_1a4a4f88a882fccf1a8a0ee6a2e4aeaa3e">afficher_ligne</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;liste,&#32;<emphasis role="keywordtype">int</emphasis>&#32;temps);
+17 <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;<link linkend="_ordonnancement_8h_1a6d1156677eca469b90e98273c0c0a1bd">trier_par_arrivee</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;l);
+18 <link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;<link linkend="_ordonnancement_8h_1a3abb41f5a152c3a452647d6e85afe7d9">chercher_premier_pret</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;l);
+19 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_ordonnancement_8h_1a7e6baea19b1b702bababfd0edc4f9e7e">tous_termines_file</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;l);
+20 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_ordonnancement_8h_1aa2a64d68f60ca087f0fc669639ebe0cb">afficher_restitution</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;l);
+21 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_ordonnancement_8h_1ab55a96491d8e16480abe42f8f4e823c7">afficher_attente</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;l);
+22 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_ordonnancement_8h_1a1c613387875b895fad749bf173e9bc8e">afficher_reponse</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;l);
+23 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_ordonnancement_8h_1af2c42fbb9cefa361474f1ed57a90f473">afficher_restitution_moyen</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;liste);
+24 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_ordonnancement_8h_1a5418d241f133d31742109676684a80ab">afficher_attente_moyen</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;liste);
+25 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_ordonnancement_8h_1aacf5ed4d698947887c01eb1531534c4e">afficher_reponse_moyen</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;liste);
+26 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_ordonnancement_8h_1a20dfc8d39a19f6b5dd4268b6b661bc35">afficher_occupation</link>(<emphasis role="keywordtype">int</emphasis>&#32;temps_CPU_actif,&#32;<emphasis role="keywordtype">int</emphasis>&#32;temps_total,&#32;<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;liste);
+27 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_ordonnancement_8h_1a5e193109dbcf802bf7a90ded24ebb4c8">ordonnancer</link>(<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link>&#32;*liste,&#32;<emphasis role="keywordtype">int</emphasis>&#32;algo,&#32;<emphasis role="keywordtype">int</emphasis>&#32;quantum,&#32;<emphasis role="keywordtype">int</emphasis>&#32;csv,&#32;<emphasis role="keywordtype">char</emphasis>*&#32;nom_fichier);
+28 
+29 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

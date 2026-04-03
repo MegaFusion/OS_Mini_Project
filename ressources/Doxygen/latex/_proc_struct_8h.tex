@@ -1,0 +1,293 @@
+\doxysection{C\+:/\+Devoir/\+OS/\+Projet/\+Doxygen.debug/\+Inc/\+Proc\+Struct.h File Reference}
+\hypertarget{_proc_struct_8h}{}\label{_proc_struct_8h}\index{C:/Devoir/OS/Projet/Doxygen.debug/Inc/ProcStruct.h@{C:/Devoir/OS/Projet/Doxygen.debug/Inc/ProcStruct.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcellule}{cellule}}
+\item 
+struct \mbox{\hyperlink{struct_processus}{Processus}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structcellule}{cellule}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} \mbox{\hyperlink{_proc_struct_8h_ab47fe3e54978f0f6a71cfdb7076857f0}{init\+Cycle}} ()
+\item 
+int \mbox{\hyperlink{_proc_struct_8h_a94d74b05aa292c781cd7c27492732e90}{est\+Vide\+Cycle}} (\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} c)
+\item 
+int \mbox{\hyperlink{_proc_struct_8h_a843f0220c5dd400314b7c6a818007b4f}{get\+\_\+\+Duree\+Cycle}} (\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} c)
+\item 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} \mbox{\hyperlink{_proc_struct_8h_a58c9a753a61c431ff73b42cc1e634bc3}{suivant\+Cycle}} (\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} c)
+\item 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} \mbox{\hyperlink{_proc_struct_8h_a8cd63e24c680937d13c8994c49b0e4e2}{inser\+Tete\+Duree\+Cycle}} (\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} c, int temps)
+\item 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} \mbox{\hyperlink{_proc_struct_8h_ad6c8d0fd5b505a000bc71ad122449046}{inser\+Duree\+Cycle}} (\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} c, int temps)
+\item 
+void \mbox{\hyperlink{_proc_struct_8h_a91fd3e6378e45dd43c64367a963f6c29}{sup\+Tete\+Cycle}} (\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} \texorpdfstring{$\ast$}{*}c)
+\item 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} \mbox{\hyperlink{_proc_struct_8h_a1670c6327fb750bb8eda88f967dc1b61}{get\+\_\+\+ES}} (\mbox{\hyperlink{struct_processus}{Processus}} p)
+\item 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} \mbox{\hyperlink{_proc_struct_8h_a1e32d5f391a564dddaba370003e8588f}{get\+\_\+\+CPU}} (\mbox{\hyperlink{struct_processus}{Processus}} p)
+\item 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} \mbox{\hyperlink{_proc_struct_8h_a995123d410572a7bca2ab79d79e37546}{creer\+Cycle}} (int durees\mbox{[}$\,$\mbox{]}, int taille)
+\item 
+int \mbox{\hyperlink{_proc_struct_8h_aaabf2a4d20bc75e75c9f640436419122}{non\+\_\+arrive}} (\mbox{\hyperlink{struct_processus}{Processus}} p)
+\item 
+int \mbox{\hyperlink{_proc_struct_8h_aef4ffc349c4bbd51c5e548639739e31a}{est\+\_\+pret}} (\mbox{\hyperlink{struct_processus}{Processus}} p)
+\item 
+int \mbox{\hyperlink{_proc_struct_8h_ad379b14dff541a24578f91a9a4290cd6}{est\+\_\+en\+\_\+cours}} (\mbox{\hyperlink{struct_processus}{Processus}} p)
+\item 
+int \mbox{\hyperlink{_proc_struct_8h_ab14735f3543458f2849555246c12e8f0}{est\+\_\+bloque}} (\mbox{\hyperlink{struct_processus}{Processus}} p)
+\item 
+int \mbox{\hyperlink{_proc_struct_8h_a4688d9ffd28ac8bb4d076489663112b2}{est\+\_\+termine}} (\mbox{\hyperlink{struct_processus}{Processus}} p)
+\item 
+\mbox{\hyperlink{struct_processus}{Processus}} \mbox{\hyperlink{_proc_struct_8h_ac16e6eff2dc9409f7becd2b26c02cfab}{init\+Proc}} (int pid, int arrive, int \texorpdfstring{$\ast$}{*}tab\+\_\+\+CPU, int taille\+\_\+\+CPU, int \texorpdfstring{$\ast$}{*}tab\+\_\+\+ES, int taille\+\_\+\+ES)
+\end{DoxyCompactItemize}
+
+
+\label{doc-typedef-members}
+\Hypertarget{_proc_struct_8h_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}\index{ProcStruct.h@{ProcStruct.h}!Cycle@{Cycle}}
+\index{Cycle@{Cycle}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{Cycle}{Cycle}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1} 
+typedef struct \mbox{\hyperlink{structcellule}{cellule}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{_proc_struct_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_proc_struct_8h_a995123d410572a7bca2ab79d79e37546}\index{ProcStruct.h@{ProcStruct.h}!creerCycle@{creerCycle}}
+\index{creerCycle@{creerCycle}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{creerCycle()}{creerCycle()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_a995123d410572a7bca2ab79d79e37546} 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} creer\+Cycle (\begin{DoxyParamCaption}\item[{int}]{durees}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{taille}{}\end{DoxyParamCaption})}
+
+Initialise un tableau de temps CPU ou ES pour un processus 
+\begin{DoxyParams}{Parameters}
+{\em durees} & \+: tableau de temps \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un \doxylink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle} CPU ou ES
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_ab14735f3543458f2849555246c12e8f0}\index{ProcStruct.h@{ProcStruct.h}!est\_bloque@{est\_bloque}}
+\index{est\_bloque@{est\_bloque}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{est\_bloque()}{est\_bloque()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_ab14735f3543458f2849555246c12e8f0} 
+int est\+\_\+bloque (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_processus}{Processus}}}]{p}{}\end{DoxyParamCaption})}
+
+Verifie si un processus est bloqué 
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: processus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si bloqué, 0 sinon
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_ad379b14dff541a24578f91a9a4290cd6}\index{ProcStruct.h@{ProcStruct.h}!est\_en\_cours@{est\_en\_cours}}
+\index{est\_en\_cours@{est\_en\_cours}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{est\_en\_cours()}{est\_en\_cours()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_ad379b14dff541a24578f91a9a4290cd6} 
+int est\+\_\+en\+\_\+cours (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_processus}{Processus}}}]{p}{}\end{DoxyParamCaption})}
+
+Verifie si un processus est en\+\_\+cours 
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: processus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si en\+\_\+cours, 0 sinon
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_aef4ffc349c4bbd51c5e548639739e31a}\index{ProcStruct.h@{ProcStruct.h}!est\_pret@{est\_pret}}
+\index{est\_pret@{est\_pret}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{est\_pret()}{est\_pret()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_aef4ffc349c4bbd51c5e548639739e31a} 
+int est\+\_\+pret (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_processus}{Processus}}}]{p}{}\end{DoxyParamCaption})}
+
+Verifie si un processus est prêt 
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: processus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si pret, 0 sinon
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_a4688d9ffd28ac8bb4d076489663112b2}\index{ProcStruct.h@{ProcStruct.h}!est\_termine@{est\_termine}}
+\index{est\_termine@{est\_termine}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{est\_termine()}{est\_termine()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_a4688d9ffd28ac8bb4d076489663112b2} 
+int est\+\_\+termine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_processus}{Processus}}}]{p}{}\end{DoxyParamCaption})}
+
+Verifie si un processus est terminé 
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: processus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si terminé, 0 sinon
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_a94d74b05aa292c781cd7c27492732e90}\index{ProcStruct.h@{ProcStruct.h}!estVideCycle@{estVideCycle}}
+\index{estVideCycle@{estVideCycle}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{estVideCycle()}{estVideCycle()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_a94d74b05aa292c781cd7c27492732e90} 
+int est\+Vide\+Cycle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}}]{c}{}\end{DoxyParamCaption})}
+
+Verifie si un cycle est vide 
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: le cycle à verifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: 1 si vide, 0 sinon
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_a1e32d5f391a564dddaba370003e8588f}\index{ProcStruct.h@{ProcStruct.h}!get\_CPU@{get\_CPU}}
+\index{get\_CPU@{get\_CPU}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{get\_CPU()}{get\_CPU()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_a1e32d5f391a564dddaba370003e8588f} 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} get\+\_\+\+CPU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_processus}{Processus}}}]{p}{}\end{DoxyParamCaption})}
+
+Renvoie le cycle CPU d\textquotesingle{}un processus 
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: processus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le cycle CPU du processus
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_a843f0220c5dd400314b7c6a818007b4f}\index{ProcStruct.h@{ProcStruct.h}!get\_DureeCycle@{get\_DureeCycle}}
+\index{get\_DureeCycle@{get\_DureeCycle}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{get\_DureeCycle()}{get\_DureeCycle()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_a843f0220c5dd400314b7c6a818007b4f} 
+int get\+\_\+\+Duree\+Cycle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}}]{c}{}\end{DoxyParamCaption})}
+
+Renvoie la durée stockée dans une cellule 
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: pointeur vers la cellule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la durée
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_a1670c6327fb750bb8eda88f967dc1b61}\index{ProcStruct.h@{ProcStruct.h}!get\_ES@{get\_ES}}
+\index{get\_ES@{get\_ES}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{get\_ES()}{get\_ES()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_a1670c6327fb750bb8eda88f967dc1b61} 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} get\+\_\+\+ES (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_processus}{Processus}}}]{p}{}\end{DoxyParamCaption})}
+
+Renvoie le cycle E/S d\textquotesingle{}un processus 
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: processus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le cycle E/S du processus
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_ab47fe3e54978f0f6a71cfdb7076857f0}\index{ProcStruct.h@{ProcStruct.h}!initCycle@{initCycle}}
+\index{initCycle@{initCycle}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{initCycle()}{initCycle()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_ab47fe3e54978f0f6a71cfdb7076857f0} 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} init\+Cycle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Initialise un \doxylink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle} \begin{DoxyReturn}{Returns}
+un \doxylink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle} vide
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_ac16e6eff2dc9409f7becd2b26c02cfab}\index{ProcStruct.h@{ProcStruct.h}!initProc@{initProc}}
+\index{initProc@{initProc}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{initProc()}{initProc()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_ac16e6eff2dc9409f7becd2b26c02cfab} 
+\mbox{\hyperlink{struct_processus}{Processus}} init\+Proc (\begin{DoxyParamCaption}\item[{int}]{pid}{, }\item[{int}]{arrive}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{tab\+\_\+\+CPU}{, }\item[{int}]{taille\+\_\+\+CPU}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{tab\+\_\+\+ES}{, }\item[{int}]{taille\+\_\+\+ES}{}\end{DoxyParamCaption})}
+
+Initialise un \doxylink{struct_processus}{Processus} 
+\begin{DoxyParams}{Parameters}
+{\em pid} & \+: le numéro de \doxylink{struct_processus}{Processus} \\
+\hline
+{\em arrive} & \+: le temps d\textquotesingle{}arrivée dans le système \\
+\hline
+{\em tab\+\_\+\+ES} & \+: tableau de temps ES \\
+\hline
+{\em tab\+\_\+\+CPU} & \+: tableau de temps CPU \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un processus initialisé
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_ad6c8d0fd5b505a000bc71ad122449046}\index{ProcStruct.h@{ProcStruct.h}!inserDureeCycle@{inserDureeCycle}}
+\index{inserDureeCycle@{inserDureeCycle}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{inserDureeCycle()}{inserDureeCycle()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_ad6c8d0fd5b505a000bc71ad122449046} 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} inser\+Duree\+Cycle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}}]{c}{, }\item[{int}]{temps}{}\end{DoxyParamCaption})}
+
+Insertion en queue du cycle donné 
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: pointeur sur la cellule du cycle \\
+\hline
+{\em temps} & \+: la durée contenu dans la cellule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le cycle mis à jour
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_a8cd63e24c680937d13c8994c49b0e4e2}\index{ProcStruct.h@{ProcStruct.h}!inserTeteDureeCycle@{inserTeteDureeCycle}}
+\index{inserTeteDureeCycle@{inserTeteDureeCycle}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{inserTeteDureeCycle()}{inserTeteDureeCycle()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_a8cd63e24c680937d13c8994c49b0e4e2} 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} inser\+Tete\+Duree\+Cycle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}}]{c}{, }\item[{int}]{temps}{}\end{DoxyParamCaption})}
+
+Insertion en tête d\textquotesingle{}un cycle 
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: pointeur sur la cellule du cycle \\
+\hline
+{\em temps} & \+: la durée contenu dans la cellule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le cycle mis à jour
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_aaabf2a4d20bc75e75c9f640436419122}\index{ProcStruct.h@{ProcStruct.h}!non\_arrive@{non\_arrive}}
+\index{non\_arrive@{non\_arrive}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{non\_arrive()}{non\_arrive()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_aaabf2a4d20bc75e75c9f640436419122} 
+int non\+\_\+arrive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_processus}{Processus}}}]{p}{}\end{DoxyParamCaption})}
+
+Verifie si un processus n\textquotesingle{}est pas encore arrivé dans le système 
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: processus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si arrivé, 0 sinon
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_a58c9a753a61c431ff73b42cc1e634bc3}\index{ProcStruct.h@{ProcStruct.h}!suivantCycle@{suivantCycle}}
+\index{suivantCycle@{suivantCycle}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{suivantCycle()}{suivantCycle()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_a58c9a753a61c431ff73b42cc1e634bc3} 
+\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} suivant\+Cycle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}}]{c}{}\end{DoxyParamCaption})}
+
+Renvoie la cellule suivante 
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: la cellule courante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la cellule suivante
+\end{DoxyReturn}
+\Hypertarget{_proc_struct_8h_a91fd3e6378e45dd43c64367a963f6c29}\index{ProcStruct.h@{ProcStruct.h}!supTeteCycle@{supTeteCycle}}
+\index{supTeteCycle@{supTeteCycle}!ProcStruct.h@{ProcStruct.h}}
+\doxysubsubsection{\texorpdfstring{supTeteCycle()}{supTeteCycle()}}
+{\footnotesize\ttfamily \label{_proc_struct_8h_a91fd3e6378e45dd43c64367a963f6c29} 
+void sup\+Tete\+Cycle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}} \texorpdfstring{$\ast$}{*}}]{c}{}\end{DoxyParamCaption})}
+
+Supprime la tête du cycle donnée 
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: adresse vers cycle\\
+\hline
+\end{DoxyParams}

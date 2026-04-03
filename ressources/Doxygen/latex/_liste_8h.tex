@@ -1,0 +1,158 @@
+\doxysection{C\+:/\+Devoir/\+OS/\+Projet/\+Doxygen.debug/\+Inc/\+Liste.h File Reference}
+\hypertarget{_liste_8h}{}\label{_liste_8h}\index{C:/Devoir/OS/Projet/Doxygen.debug/Inc/Liste.h@{C:/Devoir/OS/Projet/Doxygen.debug/Inc/Liste.h}}
+{\ttfamily \#include "{}Proc\+Struct.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcellule_liste}{cellule\+Liste}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structcellule_liste}{cellule\+Liste}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_liste_8h_ad9827381e304cd3d11a4011bdbb8ea04}{est\+Vide\+Liste}} (\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} l)
+\item 
+\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} \mbox{\hyperlink{_liste_8h_a60520b92603c0b2654ca16733c55c63c}{init\+Liste}} ()
+\item 
+\mbox{\hyperlink{struct_processus}{Processus}} \mbox{\hyperlink{_liste_8h_ad1f43f742fcbff1ef357f79283edcda4}{proc\+Liste}} (\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} l)
+\item 
+\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} \mbox{\hyperlink{_liste_8h_ae775edb76409b870341afb33e8ef47df}{suivant\+Liste}} (\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} l)
+\item 
+void \mbox{\hyperlink{_liste_8h_ade248ebe678697a4ae00970752e7e394}{sup\+Tete\+Liste}} (\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} \texorpdfstring{$\ast$}{*}l)
+\item 
+\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} \mbox{\hyperlink{_liste_8h_a7897671180b2d1e67b0ac9ddbff0d03e}{inser\+Tete\+Liste}} (\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} l, \mbox{\hyperlink{struct_processus}{Processus}} p)
+\item 
+\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} \mbox{\hyperlink{_liste_8h_a065b219bb5d73ee1c92080a887fb11c2}{inser\+Proc\+Liste}} (\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} l, \mbox{\hyperlink{struct_processus}{Processus}} p)
+\item 
+int \mbox{\hyperlink{_liste_8h_a5ac1eea0342cafb8bb1c7d9dd5c25235}{sup\+Element}} (\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} \texorpdfstring{$\ast$}{*}l, int pid)
+\end{DoxyCompactItemize}
+
+
+\label{doc-typedef-members}
+\Hypertarget{_liste_8h_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}\index{Liste.h@{Liste.h}!Liste@{Liste}}
+\index{Liste@{Liste}!Liste.h@{Liste.h}}
+\doxysubsubsection{\texorpdfstring{Liste}{Liste}}
+{\footnotesize\ttfamily \label{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e} 
+typedef struct \mbox{\hyperlink{structcellule_liste}{cellule\+Liste}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{_liste_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_liste_8h_ad9827381e304cd3d11a4011bdbb8ea04}\index{Liste.h@{Liste.h}!estVideListe@{estVideListe}}
+\index{estVideListe@{estVideListe}!Liste.h@{Liste.h}}
+\doxysubsubsection{\texorpdfstring{estVideListe()}{estVideListe()}}
+{\footnotesize\ttfamily \label{_liste_8h_ad9827381e304cd3d11a4011bdbb8ea04} 
+int est\+Vide\+Liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}}]{l}{}\end{DoxyParamCaption})}
+
+Verifie si la liste est vide, renvoie Vrai si vide ,Faux sinon 
+\begin{DoxyParams}{Parameters}
+{\em l} & \+: La \doxylink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste} à vérifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 ou 0
+\end{DoxyReturn}
+\Hypertarget{_liste_8h_a60520b92603c0b2654ca16733c55c63c}\index{Liste.h@{Liste.h}!initListe@{initListe}}
+\index{initListe@{initListe}!Liste.h@{Liste.h}}
+\doxysubsubsection{\texorpdfstring{initListe()}{initListe()}}
+{\footnotesize\ttfamily \label{_liste_8h_a60520b92603c0b2654ca16733c55c63c} 
+\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} init\+Liste (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Initialise une liste vide \begin{DoxyReturn}{Returns}
+une liste vide (NULL)
+\end{DoxyReturn}
+\Hypertarget{_liste_8h_a065b219bb5d73ee1c92080a887fb11c2}\index{Liste.h@{Liste.h}!inserProcListe@{inserProcListe}}
+\index{inserProcListe@{inserProcListe}!Liste.h@{Liste.h}}
+\doxysubsubsection{\texorpdfstring{inserProcListe()}{inserProcListe()}}
+{\footnotesize\ttfamily \label{_liste_8h_a065b219bb5d73ee1c92080a887fb11c2} 
+\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} inser\+Proc\+Liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}}]{l}{, }\item[{\mbox{\hyperlink{struct_processus}{Processus}}}]{p}{}\end{DoxyParamCaption})}
+
+Insertition en queue d\textquotesingle{}une liste 
+\begin{DoxyParams}{Parameters}
+{\em l} & \+: la \doxylink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste} de processus \\
+\hline
+{\em p} & \+: le processus à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La liste mis à jour
+\end{DoxyReturn}
+\Hypertarget{_liste_8h_a7897671180b2d1e67b0ac9ddbff0d03e}\index{Liste.h@{Liste.h}!inserTeteListe@{inserTeteListe}}
+\index{inserTeteListe@{inserTeteListe}!Liste.h@{Liste.h}}
+\doxysubsubsection{\texorpdfstring{inserTeteListe()}{inserTeteListe()}}
+{\footnotesize\ttfamily \label{_liste_8h_a7897671180b2d1e67b0ac9ddbff0d03e} 
+\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} inser\+Tete\+Liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}}]{l}{, }\item[{\mbox{\hyperlink{struct_processus}{Processus}}}]{p}{}\end{DoxyParamCaption})}
+
+Ajoute une cellule à la tête de la liste donnée 
+\begin{DoxyParams}{Parameters}
+{\em l} & \+: pointeur sur la liste \\
+\hline
+{\em p} & \+: le processus contenu dans la cellule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La liste mis à jour
+\end{DoxyReturn}
+\Hypertarget{_liste_8h_ad1f43f742fcbff1ef357f79283edcda4}\index{Liste.h@{Liste.h}!procListe@{procListe}}
+\index{procListe@{procListe}!Liste.h@{Liste.h}}
+\doxysubsubsection{\texorpdfstring{procListe()}{procListe()}}
+{\footnotesize\ttfamily \label{_liste_8h_ad1f43f742fcbff1ef357f79283edcda4} 
+\mbox{\hyperlink{struct_processus}{Processus}} proc\+Liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}}]{l}{}\end{DoxyParamCaption})}
+
+Renvoie le processus de la cellule en paramètre 
+\begin{DoxyParams}{Parameters}
+{\em l} & \+: pointeur sur la cellule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le processus courant
+\end{DoxyReturn}
+\Hypertarget{_liste_8h_ae775edb76409b870341afb33e8ef47df}\index{Liste.h@{Liste.h}!suivantListe@{suivantListe}}
+\index{suivantListe@{suivantListe}!Liste.h@{Liste.h}}
+\doxysubsubsection{\texorpdfstring{suivantListe()}{suivantListe()}}
+{\footnotesize\ttfamily \label{_liste_8h_ae775edb76409b870341afb33e8ef47df} 
+\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} suivant\+Liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}}]{l}{}\end{DoxyParamCaption})}
+
+Renvoie la cellule suivante de la cellule en paramètre 
+\begin{DoxyParams}{Parameters}
+{\em l} & \+: pointeur sur la cellule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la cellule suivante
+\end{DoxyReturn}
+\Hypertarget{_liste_8h_a5ac1eea0342cafb8bb1c7d9dd5c25235}\index{Liste.h@{Liste.h}!supElement@{supElement}}
+\index{supElement@{supElement}!Liste.h@{Liste.h}}
+\doxysubsubsection{\texorpdfstring{supElement()}{supElement()}}
+{\footnotesize\ttfamily \label{_liste_8h_a5ac1eea0342cafb8bb1c7d9dd5c25235} 
+int sup\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} \texorpdfstring{$\ast$}{*}}]{l}{, }\item[{int}]{pid}{}\end{DoxyParamCaption})}
+
+Supprime une cellule dans une liste de processus 
+\begin{DoxyParams}{Parameters}
+{\em l} & \+: La liste de processus \\
+\hline
+{\em pid} & \+: numéro du processus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Une verification \+: 1 si le processus est trouvé, 0 sinon
+\end{DoxyReturn}
+\Hypertarget{_liste_8h_ade248ebe678697a4ae00970752e7e394}\index{Liste.h@{Liste.h}!supTeteListe@{supTeteListe}}
+\index{supTeteListe@{supTeteListe}!Liste.h@{Liste.h}}
+\doxysubsubsection{\texorpdfstring{supTeteListe()}{supTeteListe()}}
+{\footnotesize\ttfamily \label{_liste_8h_ade248ebe678697a4ae00970752e7e394} 
+void sup\+Tete\+Liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}} \texorpdfstring{$\ast$}{*}}]{l}{}\end{DoxyParamCaption})}
+
+Supprime la tete de la liste, passage par adresse 
+\begin{DoxyParams}{Parameters}
+{\em l} & \+: adresse de la liste de processus\\
+\hline
+\end{DoxyParams}

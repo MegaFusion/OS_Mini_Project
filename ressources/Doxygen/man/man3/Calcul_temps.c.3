@@ -1,0 +1,141 @@
+.TH "C:/Devoir/OS/Projet/Doxygen.debug/Src/Calcul_temps.c" 3 "Version 3" "Projet_ordonnancement_OS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Devoir/OS/Projet/Doxygen.debug/Src/Calcul_temps.c
+.SH SYNOPSIS
+.br
+.PP
+\fR#include 'Calcul_temps\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBProc_temps_restitution\fP (\fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "int \fBProc_temps_attente\fP (\fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "int \fBProc_temps_reponse\fP (\fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "float \fBTaux_occupation\fP (int temps_CPU_actif, int temps_total)"
+.br
+.ti -1c
+.RI "float \fBrestitution_moyen\fP (\fBListe\fP liste)"
+.br
+.ti -1c
+.RI "float \fBreponse_moyen\fP (\fBListe\fP liste)"
+.br
+.ti -1c
+.RI "float \fBattente_moyen\fP (\fBListe\fP liste)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "float attente_moyen (\fBListe\fP liste)"
+Calcul du temps de attente moyen de l'ordonnancement 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste des processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+le temps de attente moyen
+.RE
+.PP
+
+.SS "int Proc_temps_attente (\fBProcessus\fP p)"
+Calcul du temps d'attente d'un processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP : processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+le temps total passé par le processus dans le système en état prêt
+.RE
+.PP
+
+.SS "int Proc_temps_reponse (\fBProcessus\fP p)"
+Calcul du temps de réponse d'un processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP : processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+le temps d'attente du processus depuis son arrivée dans le système jusqu'au premier passage à l'état "en_cours"
+.RE
+.PP
+
+.SS "int Proc_temps_restitution (\fBProcessus\fP p)"
+Calcul du temps de restitution d'un processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP : processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+le temps total passé par le processus dans le système
+.RE
+.PP
+
+.SS "float reponse_moyen (\fBListe\fP liste)"
+Calcul du temps de reponse moyen de l'ordonnancement 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste des processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+le temps de reponse moyen
+.RE
+.PP
+
+.SS "float restitution_moyen (\fBListe\fP liste)"
+Calcul du temps de restitution moyen de l'ordonnancement 
+.PP
+\fBParameters\fP
+.RS 4
+\fIliste\fP : la liste des processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+le temps de restitution moyen
+.RE
+.PP
+
+.SS "float Taux_occupation (int temps_CPU_actif, int temps_total)"
+Calcul du taux d'occupation du CPU par les processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fItemps_CPU_actif\fP : temps où le CPU est resté occupé 
+.br
+\fItemps_total\fP : temps total de l'ordonnancement 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+taux d'occupation du CPU par rapport au temps total d'ordonnancement en pourcentage
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projet_ordonnancement_OS from the source code\&.

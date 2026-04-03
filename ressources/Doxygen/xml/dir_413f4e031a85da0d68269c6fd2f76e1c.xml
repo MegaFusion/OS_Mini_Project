@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_413f4e031a85da0d68269c6fd2f76e1c" kind="dir">
+    <compoundname>C:/Devoir/OS/Projet/Doxygen.debug/Src</compoundname>
+    <innerfile refid="_calcul__temps_8c">Calcul_temps.c</innerfile>
+    <innerfile refid="lecture__fichier_8c">lecture_fichier.c</innerfile>
+    <innerfile refid="_liste_8c">Liste.c</innerfile>
+    <innerfile refid="main_8c">main.c</innerfile>
+    <innerfile refid="ordonnancement_8c">ordonnancement.c</innerfile>
+    <innerfile refid="_proc_struct_8c">ProcStruct.c</innerfile>
+    <innerfile refid="_s_j_f_8c">SJF.c</innerfile>
+    <innerfile refid="_s_j_r_f_8c">SJRF.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Devoir/OS/Projet/Doxygen.debug/Src/"/>
+  </compounddef>
+</doxygen>

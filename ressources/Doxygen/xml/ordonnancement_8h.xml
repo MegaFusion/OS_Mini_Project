@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="ordonnancement_8h" kind="file" language="C++">
+    <compoundname>ordonnancement.h</compoundname>
+    <includes local="no">unistd.h</includes>
+    <includes refid="_liste_8h" local="yes">Liste.h</includes>
+    <includes refid="_s_j_f_8h" local="yes">SJF.h</includes>
+    <includes refid="_s_j_r_f_8h" local="yes">SJRF.h</includes>
+    <includes refid="_calcul__temps_8h" local="yes">Calcul_temps.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Devoir/OS/Projet/Doxygen.debug/Src/main.c</includedby>
+    <includedby refid="ordonnancement_8c" local="yes">C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>Calcul_temps.h</label>
+        <link refid="_calcul__temps_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Liste.h</label>
+        <link refid="_liste_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ProcStruct.h</label>
+        <link refid="_proc_struct_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SJF.h</label>
+        <link refid="_s_j_f_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SJRF.h</label>
+        <link refid="_s_j_r_f_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h</label>
+        <link refid="ordonnancement_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdio.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h</label>
+        <link refid="ordonnancement_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c</label>
+        <link refid="ordonnancement_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="ordonnancement_8h_1a29e3d965e9809ba02a1eddd7f9b3ccf6" prot="public" static="no">
+        <name>ALGO_FIFO</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="10" column="9" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ordonnancement_8h_1a3af7ad61efbde43f590cfb7a1933bca4" prot="public" static="no">
+        <name>ALGO_SJF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="11" column="9" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ordonnancement_8h_1a433fd024c3da051fa8f32e12723e3304" prot="public" static="no">
+        <name>ALGO_SJRF</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="12" column="9" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ordonnancement_8h_1a3cbfb13cd526fc2f92becabe555f7228" prot="public" static="no">
+        <name>ALGO_RR</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="13" column="9" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="ordonnancement_8h_1a1d03b7255dc769fc270c061f1e0a54ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher_entete</definition>
+        <argsstring>(Liste liste)</argsstring>
+        <name>afficher_entete</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Affiche l&apos;en tête du tableau <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste des processus</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="15" column="6" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="13" bodyend="32" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="15" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1a4a4f88a882fccf1a8a0ee6a2e4aeaa3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher_ligne</definition>
+        <argsstring>(Liste liste, int temps)</argsstring>
+        <name>afficher_ligne</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>liste</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>temps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Affiche une ligne des informations de l&apos;ordonnancement en fonction du temps <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste des processus </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: temps de l&apos;ordonnancement</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="16" column="6" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="68" bodyend="90" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1a6d1156677eca469b90e98273c0c0a1bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste trier_par_arrivee</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>trier_par_arrivee</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Trie une liste de processus par ordre d&apos;arrivée <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste à trier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la liste triée</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="17" column="7" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="319" bodyend="347" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="17" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1a3abb41f5a152c3a452647d6e85afe7d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste chercher_premier_pret</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>chercher_premier_pret</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Parcourt une liste de processus et renvoie le premier processus prêt <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: La liste de processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Si un processus prêt trouvé et prioritaire, renvoie ce dernier. NULL sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="18" column="7" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="49" bodyend="66" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="18" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1a7e6baea19b1b702bababfd0edc4f9e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tous_termines_file</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>tous_termines_file</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Verifie si tous les processus d&apos;une liste sont tous terminés <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref> de processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 si oui, 0 sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="19" column="5" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="349" bodyend="363" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="19" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1aa2a64d68f60ca087f0fc669639ebe0cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher_restitution</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>afficher_restitution</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Afficher le temps de restitution d&apos;un processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste de processus</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="20" column="6" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="117" bodyend="136" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="20" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1ab55a96491d8e16480abe42f8f4e823c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher_attente</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>afficher_attente</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Afficher le temps d&apos;attente d&apos;un processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste de processus</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="21" column="6" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="138" bodyend="157" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1a1c613387875b895fad749bf173e9bc8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher_reponse</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>afficher_reponse</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Afficher le temps de reponse d&apos;un processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste de processus</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="22" column="6" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="159" bodyend="178" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1af2c42fbb9cefa361474f1ed57a90f473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher_restitution_moyen</definition>
+        <argsstring>(Liste liste)</argsstring>
+        <name>afficher_restitution_moyen</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Afficher le temps de restitution moyen d&apos;un ordonnancement <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste de processus</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="23" column="6" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="180" bodyend="194" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1a5418d241f133d31742109676684a80ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher_attente_moyen</definition>
+        <argsstring>(Liste liste)</argsstring>
+        <name>afficher_attente_moyen</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Afficher le temps d&apos;attente moyen d&apos;un ordonnancement <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste de processus</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="24" column="6" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="196" bodyend="210" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1aacf5ed4d698947887c01eb1531534c4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher_reponse_moyen</definition>
+        <argsstring>(Liste liste)</argsstring>
+        <name>afficher_reponse_moyen</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Afficher le temps de reponse moyen d&apos;un ordonnancement <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste de processus</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="25" column="6" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="212" bodyend="226" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1a20dfc8d39a19f6b5dd4268b6b661bc35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficher_occupation</definition>
+        <argsstring>(int temps_CPU_actif, int temps_total, Liste liste)</argsstring>
+        <name>afficher_occupation</name>
+        <param>
+          <type>int</type>
+          <declname>temps_CPU_actif</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>temps_total</declname>
+        </param>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Afficher le temps d&apos;occupation moyen du système durant un ordonnancement <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la liste de processus </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temps_CPU_actif</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: temps où le CPU est resté occupé </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temps_total</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: temps total de l&apos;ordonnancement</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="26" column="6" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="228" bodyend="244" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ordonnancement_8h_1a5e193109dbcf802bf7a90ded24ebb4c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ordonnancer</definition>
+        <argsstring>(Liste *liste, int algo, int quantum, int csv, char *nom_fichier)</argsstring>
+        <name>ordonnancer</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref> *</type>
+          <declname>liste</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>algo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantum</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>csv</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>nom_fichier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Ordonnancement d&apos;une liste de processus selon l&apos;algorithme choisi. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: adresse de la liste de processus </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>algo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: algorithme (ALGO_FIFO=0, ALGO_SJF=1, ALGO_SJRF=2, ALGO_RR=3) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: durée du quantum pour RR (ignoré sinon) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>export_csv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 1 pour sauvegarder en CSV, 0 sinon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 si tout s&apos;est bien passé</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" line="27" column="5" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c" bodystart="365" bodyend="553" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h" declline="27" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ORDONNANCEMENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ORDONNANCEMENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_liste_8h" kindref="compound">Liste.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_j_f_8h" kindref="compound">SJF.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_j_r_f_8h" kindref="compound">SJRF.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_calcul__temps_8h" kindref="compound">Calcul_temps.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="ordonnancement_8h_1a29e3d965e9809ba02a1eddd7f9b3ccf6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALGO_FIFO<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="ordonnancement_8h_1a3af7ad61efbde43f590cfb7a1933bca4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALGO_SJF<sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="ordonnancement_8h_1a433fd024c3da051fa8f32e12723e3304" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALGO_SJRF<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="ordonnancement_8h_1a3cbfb13cd526fc2f92becabe555f7228" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALGO_RR<sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1a1d03b7255dc769fc270c061f1e0a54ca" kindref="member">afficher_entete</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>liste);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1a4a4f88a882fccf1a8a0ee6a2e4aeaa3e" kindref="member">afficher_ligne</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>liste,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temps);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="ordonnancement_8h_1a6d1156677eca469b90e98273c0c0a1bd" kindref="member">trier_par_arrivee</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="ordonnancement_8h_1a3abb41f5a152c3a452647d6e85afe7d9" kindref="member">chercher_premier_pret</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1a7e6baea19b1b702bababfd0edc4f9e7e" kindref="member">tous_termines_file</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1aa2a64d68f60ca087f0fc669639ebe0cb" kindref="member">afficher_restitution</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1ab55a96491d8e16480abe42f8f4e823c7" kindref="member">afficher_attente</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1a1c613387875b895fad749bf173e9bc8e" kindref="member">afficher_reponse</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1af2c42fbb9cefa361474f1ed57a90f473" kindref="member">afficher_restitution_moyen</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>liste);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1a5418d241f133d31742109676684a80ab" kindref="member">afficher_attente_moyen</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>liste);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1aacf5ed4d698947887c01eb1531534c4e" kindref="member">afficher_reponse_moyen</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>liste);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1a20dfc8d39a19f6b5dd4268b6b661bc35" kindref="member">afficher_occupation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temps_CPU_actif,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temps_total,<sp/><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>liste);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ordonnancement_8h_1a5e193109dbcf802bf7a90ded24ebb4c8" kindref="member">ordonnancer</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>*liste,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>algo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantum,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>csv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>nom_fichier);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h"/>
+  </compounddef>
+</doxygen>

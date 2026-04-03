@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_s_j_r_f_8h" kind="file" language="C++">
+    <compoundname>SJRF.h</compoundname>
+    <includes refid="_liste_8h" local="yes">Liste.h</includes>
+    <includedby refid="ordonnancement_8h" local="yes">C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h</includedby>
+    <includedby refid="_s_j_r_f_8c" local="yes">C:/Devoir/OS/Projet/Doxygen.debug/Src/SJRF.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Liste.h</label>
+        <link refid="_liste_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ProcStruct.h</label>
+        <link refid="_proc_struct_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Inc/SJRF.h</label>
+        <link refid="_s_j_r_f_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Inc/SJRF.h</label>
+        <link refid="_s_j_r_f_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h</label>
+        <link refid="ordonnancement_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Src/SJRF.c</label>
+        <link refid="_s_j_r_f_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Src/ordonnancement.c</label>
+        <link refid="ordonnancement_8c"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_s_j_r_f_8h_1a377891ba51120e8290bcfb997ada9b85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste chercher_sjrf</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>chercher_sjrf</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Parcourt une liste de processus et renvoie le processus prêt ou en cours avec le plus petit temps d&apos;éxecution, prendre en priorité les nouveaux arrivés si le temps d&apos;éxecution est plus petit <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: La liste de processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Le processus avec le temps d&apos;éxecution le plus court, NULL sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/SJRF.h" line="6" column="7" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/SJRF.c" bodystart="3" bodyend="23" declfile="C:/Devoir/OS/Projet/Doxygen.debug/Inc/SJRF.h" declline="6" declcolumn="7"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SJRF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SJRF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_liste_8h" kindref="compound">Liste.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="_s_j_r_f_8h_1a377891ba51120e8290bcfb997ada9b85" kindref="member">chercher_sjrf</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Devoir/OS/Projet/Doxygen.debug/Inc/SJRF.h"/>
+  </compounddef>
+</doxygen>

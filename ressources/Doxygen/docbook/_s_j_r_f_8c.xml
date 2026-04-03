@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__s_j_r_f_8c" xml:lang="en-US">
+<title>C:/Devoir/OS/Projet/Doxygen.debug/Src/SJRF.c File Reference</title>
+<indexterm><primary>C:/Devoir/OS/Projet/Doxygen.debug/Src/SJRF.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;SJRF.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> <link linkend="__s_j_r_f_8c_1a377891ba51120e8290bcfb997ada9b85">chercher_sjrf</link> (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> l)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__s_j_r_f_8c_1a377891ba51120e8290bcfb997ada9b85"/><section>
+    <title>chercher_sjrf()</title>
+<indexterm><primary>chercher_sjrf</primary><secondary>SJRF.c</secondary></indexterm>
+<indexterm><primary>SJRF.c</primary><secondary>chercher_sjrf</secondary></indexterm>
+<para><computeroutput><link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> chercher_sjrf (<link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> l)</computeroutput></para>
+<para>Parcourt une liste de processus et renvoie le processus prêt ou en cours avec le plus petit temps d&apos;éxecution, prendre en priorité les nouveaux arrivés si le temps d&apos;éxecution est plus petit 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>l</entry><entry>
+<para>: La liste de processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Le processus avec le temps d&apos;éxecution le plus court, NULL sinon</para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

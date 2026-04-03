@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__proc_struct_8c" xml:lang="en-US">
+<title>C:/Devoir/OS/Projet/Doxygen.debug/Src/ProcStruct.c File Reference</title>
+<indexterm><primary>C:/Devoir/OS/Projet/Doxygen.debug/Src/ProcStruct.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;ProcStruct.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> <link linkend="__proc_struct_8c_1ab47fe3e54978f0f6a71cfdb7076857f0">initCycle</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="__proc_struct_8c_1a94d74b05aa292c781cd7c27492732e90">estVideCycle</link> (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> c)</para>
+</listitem>
+            <listitem><para>int <link linkend="__proc_struct_8c_1a843f0220c5dd400314b7c6a818007b4f">get_DureeCycle</link> (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> c)</para>
+</listitem>
+            <listitem><para><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> <link linkend="__proc_struct_8c_1a58c9a753a61c431ff73b42cc1e634bc3">suivantCycle</link> (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> c)</para>
+</listitem>
+            <listitem><para><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> <link linkend="__proc_struct_8c_1a8cd63e24c680937d13c8994c49b0e4e2">inserTeteDureeCycle</link> (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> c, int temps)</para>
+</listitem>
+            <listitem><para><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> <link linkend="__proc_struct_8c_1ad6c8d0fd5b505a000bc71ad122449046">inserDureeCycle</link> (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> c, int temps)</para>
+</listitem>
+            <listitem><para>void <link linkend="__proc_struct_8c_1a91fd3e6378e45dd43c64367a963f6c29">supTeteCycle</link> (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> *c)</para>
+</listitem>
+            <listitem><para><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> <link linkend="__proc_struct_8c_1a1670c6327fb750bb8eda88f967dc1b61">get_ES</link> (<link linkend="_struct_processus">Processus</link> p)</para>
+</listitem>
+            <listitem><para><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> <link linkend="__proc_struct_8c_1a1e32d5f391a564dddaba370003e8588f">get_CPU</link> (<link linkend="_struct_processus">Processus</link> p)</para>
+</listitem>
+            <listitem><para><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> <link linkend="__proc_struct_8c_1a995123d410572a7bca2ab79d79e37546">creerCycle</link> (int durees[], int taille)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_processus">Processus</link> <link linkend="__proc_struct_8c_1ac16e6eff2dc9409f7becd2b26c02cfab">initProc</link> (int pid, int arrive, int *tab_CPU, int taille_CPU, int *tab_ES, int taille_ES)</para>
+</listitem>
+            <listitem><para>int <link linkend="__proc_struct_8c_1aaabf2a4d20bc75e75c9f640436419122">non_arrive</link> (<link linkend="_struct_processus">Processus</link> p)</para>
+</listitem>
+            <listitem><para>int <link linkend="__proc_struct_8c_1aef4ffc349c4bbd51c5e548639739e31a">est_pret</link> (<link linkend="_struct_processus">Processus</link> p)</para>
+</listitem>
+            <listitem><para>int <link linkend="__proc_struct_8c_1ad379b14dff541a24578f91a9a4290cd6">est_en_cours</link> (<link linkend="_struct_processus">Processus</link> p)</para>
+</listitem>
+            <listitem><para>int <link linkend="__proc_struct_8c_1ab14735f3543458f2849555246c12e8f0">est_bloque</link> (<link linkend="_struct_processus">Processus</link> p)</para>
+</listitem>
+            <listitem><para>int <link linkend="__proc_struct_8c_1a4688d9ffd28ac8bb4d076489663112b2">est_termine</link> (<link linkend="_struct_processus">Processus</link> p)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__proc_struct_8c_1a995123d410572a7bca2ab79d79e37546"/><section>
+    <title>creerCycle()</title>
+<indexterm><primary>creerCycle</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>creerCycle</secondary></indexterm>
+<para><computeroutput><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> creerCycle (int durees[], int taille)</computeroutput></para>
+<para>Initialise un tableau de temps CPU ou ES pour un processus 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>durees</entry><entry>
+<para>: tableau de temps </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>un <link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> CPU ou ES</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1ab14735f3543458f2849555246c12e8f0"/><section>
+    <title>est_bloque()</title>
+<indexterm><primary>est_bloque</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>est_bloque</secondary></indexterm>
+<para><computeroutput>int est_bloque (<link linkend="_struct_processus">Processus</link> p)</computeroutput></para>
+<para>Verifie si un processus est bloqué 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>: processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>1 si bloqué, 0 sinon</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1ad379b14dff541a24578f91a9a4290cd6"/><section>
+    <title>est_en_cours()</title>
+<indexterm><primary>est_en_cours</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>est_en_cours</secondary></indexterm>
+<para><computeroutput>int est_en_cours (<link linkend="_struct_processus">Processus</link> p)</computeroutput></para>
+<para>Verifie si un processus est en_cours 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>: processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>1 si en_cours, 0 sinon</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1aef4ffc349c4bbd51c5e548639739e31a"/><section>
+    <title>est_pret()</title>
+<indexterm><primary>est_pret</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>est_pret</secondary></indexterm>
+<para><computeroutput>int est_pret (<link linkend="_struct_processus">Processus</link> p)</computeroutput></para>
+<para>Verifie si un processus est prêt 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>: processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>1 si pret, 0 sinon</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1a4688d9ffd28ac8bb4d076489663112b2"/><section>
+    <title>est_termine()</title>
+<indexterm><primary>est_termine</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>est_termine</secondary></indexterm>
+<para><computeroutput>int est_termine (<link linkend="_struct_processus">Processus</link> p)</computeroutput></para>
+<para>Verifie si un processus est terminé 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>: processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>1 si terminé, 0 sinon</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1a94d74b05aa292c781cd7c27492732e90"/><section>
+    <title>estVideCycle()</title>
+<indexterm><primary>estVideCycle</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>estVideCycle</secondary></indexterm>
+<para><computeroutput>int estVideCycle (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> c)</computeroutput></para>
+<para>Verifie si un cycle est vide 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>c</entry><entry>
+<para>: le cycle à verifier </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>: 1 si vide, 0 sinon</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1a1e32d5f391a564dddaba370003e8588f"/><section>
+    <title>get_CPU()</title>
+<indexterm><primary>get_CPU</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>get_CPU</secondary></indexterm>
+<para><computeroutput><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> get_CPU (<link linkend="_struct_processus">Processus</link> p)</computeroutput></para>
+<para>Renvoie le cycle CPU d&apos;un processus 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>: processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>le cycle CPU du processus</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1a843f0220c5dd400314b7c6a818007b4f"/><section>
+    <title>get_DureeCycle()</title>
+<indexterm><primary>get_DureeCycle</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>get_DureeCycle</secondary></indexterm>
+<para><computeroutput>int get_DureeCycle (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> c)</computeroutput></para>
+<para>Renvoie la durée stockée dans une cellule 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>c</entry><entry>
+<para>: pointeur vers la cellule </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>la durée</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1a1670c6327fb750bb8eda88f967dc1b61"/><section>
+    <title>get_ES()</title>
+<indexterm><primary>get_ES</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>get_ES</secondary></indexterm>
+<para><computeroutput><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> get_ES (<link linkend="_struct_processus">Processus</link> p)</computeroutput></para>
+<para>Renvoie le cycle E/S d&apos;un processus 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>: processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>le cycle E/S du processus</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1ab47fe3e54978f0f6a71cfdb7076857f0"/><section>
+    <title>initCycle()</title>
+<indexterm><primary>initCycle</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>initCycle</secondary></indexterm>
+<para><computeroutput><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> initCycle ( )</computeroutput></para>
+<para>Initialise un <link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> <formalpara><title>Returns</title>
+
+<para>un <link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> vide</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1ac16e6eff2dc9409f7becd2b26c02cfab"/><section>
+    <title>initProc()</title>
+<indexterm><primary>initProc</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>initProc</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_processus">Processus</link> initProc (int pid, int arrive, int * tab_CPU, int taille_CPU, int * tab_ES, int taille_ES)</computeroutput></para>
+<para>Initialise un <link linkend="_struct_processus">Processus</link> 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>pid</entry><entry>
+<para>: le numéro de <link linkend="_struct_processus">Processus</link> </para>
+</entry>
+                            </row>
+                            <row>
+<entry>arrive</entry><entry>
+<para>: le temps d&apos;arrivée dans le système </para>
+</entry>
+                            </row>
+                            <row>
+<entry>tab_ES</entry><entry>
+<para>: tableau de temps ES </para>
+</entry>
+                            </row>
+                            <row>
+<entry>tab_CPU</entry><entry>
+<para>: tableau de temps CPU </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Un processus initialisé</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1ad6c8d0fd5b505a000bc71ad122449046"/><section>
+    <title>inserDureeCycle()</title>
+<indexterm><primary>inserDureeCycle</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>inserDureeCycle</secondary></indexterm>
+<para><computeroutput><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> inserDureeCycle (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> c, int temps)</computeroutput></para>
+<para>Insertion en queue du cycle donné 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>c</entry><entry>
+<para>: pointeur sur la cellule du cycle </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temps</entry><entry>
+<para>: la durée contenu dans la cellule </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Le cycle mis à jour</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1a8cd63e24c680937d13c8994c49b0e4e2"/><section>
+    <title>inserTeteDureeCycle()</title>
+<indexterm><primary>inserTeteDureeCycle</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>inserTeteDureeCycle</secondary></indexterm>
+<para><computeroutput><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> inserTeteDureeCycle (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> c, int temps)</computeroutput></para>
+<para>Insertion en tête d&apos;un cycle 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>c</entry><entry>
+<para>: pointeur sur la cellule du cycle </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temps</entry><entry>
+<para>: la durée contenu dans la cellule </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Le cycle mis à jour</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1aaabf2a4d20bc75e75c9f640436419122"/><section>
+    <title>non_arrive()</title>
+<indexterm><primary>non_arrive</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>non_arrive</secondary></indexterm>
+<para><computeroutput>int non_arrive (<link linkend="_struct_processus">Processus</link> p)</computeroutput></para>
+<para>Verifie si un processus n&apos;est pas encore arrivé dans le système 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>: processus </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>1 si arrivé, 0 sinon</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1a58c9a753a61c431ff73b42cc1e634bc3"/><section>
+    <title>suivantCycle()</title>
+<indexterm><primary>suivantCycle</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>suivantCycle</secondary></indexterm>
+<para><computeroutput><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> suivantCycle (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> c)</computeroutput></para>
+<para>Renvoie la cellule suivante 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>c</entry><entry>
+<para>: la cellule courante </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>la cellule suivante</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__proc_struct_8c_1a91fd3e6378e45dd43c64367a963f6c29"/><section>
+    <title>supTeteCycle()</title>
+<indexterm><primary>supTeteCycle</primary><secondary>ProcStruct.c</secondary></indexterm>
+<indexterm><primary>ProcStruct.c</primary><secondary>supTeteCycle</secondary></indexterm>
+<para><computeroutput>void supTeteCycle (<link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> * c)</computeroutput></para>
+<para>Supprime la tête du cycle donnée 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>c</entry><entry>
+<para>: adresse vers cycle</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

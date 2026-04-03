@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8c" xml:lang="en-US">
+<title>C:/Devoir/OS/Projet/Doxygen.debug/Src/main.c File Reference</title>
+<indexterm><primary>C:/Devoir/OS/Projet/Doxygen.debug/Src/main.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;ordonnancement.h&quot;<?linebreak?>#include &quot;lecture_fichier.h&quot;<?linebreak?>#include &lt;string.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_main_8c_1a37371f78ea9410132092e108e1308c1b">afficher_aide</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> <link linkend="_main_8c_1a78f7c4fb7d8384ba49f9135545b9cc46">creer_liste_defaut</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_main_8c_1a0ddf1224851353fc92bfbff6f499fa97">main</link> (int argc, char *argv[])</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_main_8c_1a37371f78ea9410132092e108e1308c1b"/><section>
+    <title>afficher_aide()</title>
+<indexterm><primary>afficher_aide</primary><secondary>main.c</secondary></indexterm>
+<indexterm><primary>main.c</primary><secondary>afficher_aide</secondary></indexterm>
+<para><computeroutput>void afficher_aide ( )</computeroutput></para>
+<para>Afficher le texte d&apos;aide pour l&apos;utilisation en invité de commande après l&apos;option -h</para>
+</section>
+<anchor xml:id="_main_8c_1a78f7c4fb7d8384ba49f9135545b9cc46"/><section>
+    <title>creer_liste_defaut()</title>
+<indexterm><primary>creer_liste_defaut</primary><secondary>main.c</secondary></indexterm>
+<indexterm><primary>main.c</primary><secondary>creer_liste_defaut</secondary></indexterm>
+<para><computeroutput><link linkend="__liste_8h_1a2beb3657e7e9a16472be77ab541bd15e">Liste</link> creer_liste_defaut ( )</computeroutput></para>
+<para>Crée une liste de processus par défaut pour les tests <formalpara><title>Returns</title>
+
+<para>la liste des processus</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_main_8c_1a0ddf1224851353fc92bfbff6f499fa97"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>main.c</secondary></indexterm>
+<indexterm><primary>main.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (int argc, char * argv[])</computeroutput></para>
+<para>Parsing pour l&apos;invité de commande et pour lancer le programme</para>
+</section>
+</section>
+</section>

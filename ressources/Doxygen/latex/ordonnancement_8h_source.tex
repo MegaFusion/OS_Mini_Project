@@ -1,0 +1,35 @@
+\doxysection{ordonnancement.\+h}
+\hypertarget{ordonnancement_8h_source}{}\label{ordonnancement_8h_source}\index{C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h@{C:/Devoir/OS/Projet/Doxygen.debug/Inc/ordonnancement.h}}
+\mbox{\hyperlink{ordonnancement_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ORDONNANCEMENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ORDONNANCEMENT\_H}}
+\DoxyCodeLine{00003\ \ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_liste_8h}{Liste.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_j_f_8h}{SJF.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_j_r_f_8h}{SJRF.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_calcul__temps_8h}{Calcul\_temps.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ ALGO\_FIFO\ 0}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ ALGO\_SJF\ \ 1}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ ALGO\_SJRF\ 2}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ ALGO\_RR\ \ \ 3}}
+\DoxyCodeLine{00014\ \ }
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ordonnancement_8h_a1d03b7255dc769fc270c061f1e0a54ca}{afficher\_entete}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ liste);}
+\DoxyCodeLine{00016\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ordonnancement_8h_a4a4f88a882fccf1a8a0ee6a2e4aeaa3e}{afficher\_ligne}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ liste,\ \textcolor{keywordtype}{int}\ temps);}
+\DoxyCodeLine{00017\ \mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ \mbox{\hyperlink{ordonnancement_8h_a6d1156677eca469b90e98273c0c0a1bd}{trier\_par\_arrivee}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ l);}
+\DoxyCodeLine{00018\ \mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ \mbox{\hyperlink{ordonnancement_8h_a3abb41f5a152c3a452647d6e85afe7d9}{chercher\_premier\_pret}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ l);}
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{ordonnancement_8h_a7e6baea19b1b702bababfd0edc4f9e7e}{tous\_termines\_file}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ l);}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ordonnancement_8h_aa2a64d68f60ca087f0fc669639ebe0cb}{afficher\_restitution}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ l);}
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ordonnancement_8h_ab55a96491d8e16480abe42f8f4e823c7}{afficher\_attente}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ l);}
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ordonnancement_8h_a1c613387875b895fad749bf173e9bc8e}{afficher\_reponse}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ l);}
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ordonnancement_8h_af2c42fbb9cefa361474f1ed57a90f473}{afficher\_restitution\_moyen}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ liste);}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ordonnancement_8h_a5418d241f133d31742109676684a80ab}{afficher\_attente\_moyen}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ liste);}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ordonnancement_8h_aacf5ed4d698947887c01eb1531534c4e}{afficher\_reponse\_moyen}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ liste);}
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ordonnancement_8h_a20dfc8d39a19f6b5dd4268b6b661bc35}{afficher\_occupation}}(\textcolor{keywordtype}{int}\ temps\_CPU\_actif,\ \textcolor{keywordtype}{int}\ temps\_total,\ \mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ liste);}
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{ordonnancement_8h_a5e193109dbcf802bf7a90ded24ebb4c8}{ordonnancer}}(\mbox{\hyperlink{_liste_8h_a2beb3657e7e9a16472be77ab541bd15e}{Liste}}\ *liste,\ \textcolor{keywordtype}{int}\ algo,\ \textcolor{keywordtype}{int}\ quantum,\ \textcolor{keywordtype}{int}\ csv,\ \textcolor{keywordtype}{char}*\ nom\_fichier);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

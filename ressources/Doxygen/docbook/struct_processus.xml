@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_processus" xml:lang="en-US">
+<title>Processus Struct Reference</title>
+<indexterm><primary>Processus</primary></indexterm>
+<para>
+<computeroutput>#include &lt;ProcStruct.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_processus_1a5c907c4a6a278e1fa2287f625381c285">pid</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_processus_1a4248efbd13b9394be63391dae15a4b66">arrive</link></para>
+</listitem>
+            <listitem><para><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> <link linkend="_struct_processus_1a806ad2ddd2773351e88c5f4323d1e777">ES</link></para>
+</listitem>
+            <listitem><para><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> <link linkend="_struct_processus_1ae29697e7ea4db9386bcfbf0d0956df37">CPU</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_processus_1af4e781dc3f389522f06b41da8e324dda">etat</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_processus_1ade7b41965f58214785f03344697f9a9a">temps_fin</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_processus_1a803b6d583bf50ffe633eb57e81366b84">temps_CPU</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_processus_1ade3a5d21ad11ff1669c4f099f0625595">temps_ES</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_processus_1a6a299b91d8a68e36386c5fd2fa250334">temps_premier_CPU</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_processus_1a8725ff30f67763349cb3229359b5d1eb">temps_premier_CPU_verif</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_processus_1a4248efbd13b9394be63391dae15a4b66"/><section>
+    <title>arrive</title>
+<indexterm><primary>arrive</primary><secondary>Processus</secondary></indexterm>
+<indexterm><primary>Processus</primary><secondary>arrive</secondary></indexterm>
+<para><computeroutput>int Processus::arrive</computeroutput></para></section>
+<anchor xml:id="_struct_processus_1ae29697e7ea4db9386bcfbf0d0956df37"/><section>
+    <title>CPU</title>
+<indexterm><primary>CPU</primary><secondary>Processus</secondary></indexterm>
+<indexterm><primary>Processus</primary><secondary>CPU</secondary></indexterm>
+<para><computeroutput><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> Processus::CPU</computeroutput></para></section>
+<anchor xml:id="_struct_processus_1a806ad2ddd2773351e88c5f4323d1e777"/><section>
+    <title>ES</title>
+<indexterm><primary>ES</primary><secondary>Processus</secondary></indexterm>
+<indexterm><primary>Processus</primary><secondary>ES</secondary></indexterm>
+<para><computeroutput><link linkend="__proc_struct_8h_1add6a42ce86e99e9ac806e4e9f71d64b1">Cycle</link> Processus::ES</computeroutput></para></section>
+<anchor xml:id="_struct_processus_1af4e781dc3f389522f06b41da8e324dda"/><section>
+    <title>etat</title>
+<indexterm><primary>etat</primary><secondary>Processus</secondary></indexterm>
+<indexterm><primary>Processus</primary><secondary>etat</secondary></indexterm>
+<para><computeroutput>int Processus::etat</computeroutput></para></section>
+<anchor xml:id="_struct_processus_1a5c907c4a6a278e1fa2287f625381c285"/><section>
+    <title>pid</title>
+<indexterm><primary>pid</primary><secondary>Processus</secondary></indexterm>
+<indexterm><primary>Processus</primary><secondary>pid</secondary></indexterm>
+<para><computeroutput>int Processus::pid</computeroutput></para></section>
+<anchor xml:id="_struct_processus_1a803b6d583bf50ffe633eb57e81366b84"/><section>
+    <title>temps_CPU</title>
+<indexterm><primary>temps_CPU</primary><secondary>Processus</secondary></indexterm>
+<indexterm><primary>Processus</primary><secondary>temps_CPU</secondary></indexterm>
+<para><computeroutput>int Processus::temps_CPU</computeroutput></para></section>
+<anchor xml:id="_struct_processus_1ade3a5d21ad11ff1669c4f099f0625595"/><section>
+    <title>temps_ES</title>
+<indexterm><primary>temps_ES</primary><secondary>Processus</secondary></indexterm>
+<indexterm><primary>Processus</primary><secondary>temps_ES</secondary></indexterm>
+<para><computeroutput>int Processus::temps_ES</computeroutput></para></section>
+<anchor xml:id="_struct_processus_1ade7b41965f58214785f03344697f9a9a"/><section>
+    <title>temps_fin</title>
+<indexterm><primary>temps_fin</primary><secondary>Processus</secondary></indexterm>
+<indexterm><primary>Processus</primary><secondary>temps_fin</secondary></indexterm>
+<para><computeroutput>int Processus::temps_fin</computeroutput></para></section>
+<anchor xml:id="_struct_processus_1a6a299b91d8a68e36386c5fd2fa250334"/><section>
+    <title>temps_premier_CPU</title>
+<indexterm><primary>temps_premier_CPU</primary><secondary>Processus</secondary></indexterm>
+<indexterm><primary>Processus</primary><secondary>temps_premier_CPU</secondary></indexterm>
+<para><computeroutput>int Processus::temps_premier_CPU</computeroutput></para></section>
+<anchor xml:id="_struct_processus_1a8725ff30f67763349cb3229359b5d1eb"/><section>
+    <title>temps_premier_CPU_verif</title>
+<indexterm><primary>temps_premier_CPU_verif</primary><secondary>Processus</secondary></indexterm>
+<indexterm><primary>Processus</primary><secondary>temps_premier_CPU_verif</secondary></indexterm>
+<para><computeroutput>int Processus::temps_premier_CPU_verif</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Devoir/OS/Projet/Doxygen.debug/Inc/<link linkend="__proc_struct_8h">ProcStruct.h</link></section>
+</section>

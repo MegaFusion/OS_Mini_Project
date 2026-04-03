@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_liste_8c" kind="file" language="C++">
+    <compoundname>Liste.c</compoundname>
+    <includes refid="_liste_8h" local="yes">Liste.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Liste.h</label>
+        <link refid="_liste_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ProcStruct.h</label>
+        <link refid="_proc_struct_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c</label>
+        <link refid="_liste_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_liste_8c_1ad9827381e304cd3d11a4011bdbb8ea04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int estVideListe</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>estVideListe</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Verifie si la liste est vide, renvoie Vrai si vide ,Faux sinon <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: La <ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref> à vérifier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 ou 0</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" line="3" column="5" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" bodystart="3" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="_liste_8c_1a60520b92603c0b2654ca16733c55c63c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste initListe</definition>
+        <argsstring>()</argsstring>
+        <name>initListe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Initialise une liste vide <simplesect kind="return"><para>une liste vide (NULL)</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" line="12" column="7" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" bodystart="12" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="_liste_8c_1ad1f43f742fcbff1ef357f79283edcda4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_processus" kindref="compound">Processus</ref></type>
+        <definition>Processus procListe</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>procListe</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Renvoie le processus de la cellule en paramètre <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur sur la cellule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le processus courant</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" line="20" column="11" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" bodystart="20" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="_liste_8c_1ae775edb76409b870341afb33e8ef47df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste suivantListe</definition>
+        <argsstring>(Liste l)</argsstring>
+        <name>suivantListe</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Renvoie la cellule suivante de la cellule en paramètre <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur sur la cellule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la cellule suivante</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" line="29" column="7" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" bodystart="29" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="_liste_8c_1ade248ebe678697a4ae00970752e7e394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void supTeteListe</definition>
+        <argsstring>(Liste *l)</argsstring>
+        <name>supTeteListe</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Supprime la tete de la liste, passage par adresse <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: adresse de la liste de processus</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" line="38" column="6" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" bodystart="38" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="_liste_8c_1a7897671180b2d1e67b0ac9ddbff0d03e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste inserTeteListe</definition>
+        <argsstring>(Liste l, Processus p)</argsstring>
+        <name>inserTeteListe</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Ajoute une cellule à la tête de la liste donnée <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur sur la liste </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le processus contenu dans la cellule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>La liste mis à jour</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" line="53" column="7" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" bodystart="53" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="_liste_8c_1a065b219bb5d73ee1c92080a887fb11c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+        <definition>Liste inserProcListe</definition>
+        <argsstring>(Liste l, Processus p)</argsstring>
+        <name>inserProcListe</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_processus" kindref="compound">Processus</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Insertition en queue d&apos;une liste <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la <ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref> de processus </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le processus à ajouter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>La liste mis à jour</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" line="70" column="7" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" bodystart="70" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="_liste_8c_1a5ac1eea0342cafb8bb1c7d9dd5c25235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int supElement</definition>
+        <argsstring>(Liste *l, int pid)</argsstring>
+        <name>supElement</name>
+        <param>
+          <type><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Supprime une cellule dans une liste de processus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: La liste de processus </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: numéro du processus </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Une verification : 1 si le processus est trouvé, 0 sinon</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" line="88" column="5" bodyfile="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c" bodystart="88" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_liste_8h" kindref="compound">Liste.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_liste_8c_1ad9827381e304cd3d11a4011bdbb8ea04" kindref="member">estVideListe</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l<sp/>==<sp/>NULL;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="_liste_8c_1a60520b92603c0b2654ca16733c55c63c" kindref="member">initListe</ref>(){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="struct_processus" kindref="compound">Processus</ref><sp/><ref refid="_liste_8c_1ad1f43f742fcbff1ef357f79283edcda4" kindref="member">procListe</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l-&gt;<ref refid="structcellule_liste_1a8e2db23d1b77936913f80f7aa42552b1" kindref="member">proc</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="_liste_8c_1ae775edb76409b870341afb33e8ef47df" kindref="member">suivantListe</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l-&gt;<ref refid="structcellule_liste_1a0dfc7db9d5534dfe71ac1563b2205935" kindref="member">suivant</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_liste_8c_1ade248ebe678697a4ae00970752e7e394" kindref="member">supTeteListe</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>*l){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>ll;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_liste_8c_1ad9827381e304cd3d11a4011bdbb8ea04" kindref="member">estVideListe</ref>(*l)){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;la<sp/>liste<sp/>est<sp/>deja<sp/>vide\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(0);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>ll<sp/>=<sp/>*l;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>*l<sp/>=<sp/><ref refid="_liste_8c_1ae775edb76409b870341afb33e8ef47df" kindref="member">suivantListe</ref>(*l);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>free(ll);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="_liste_8c_1a7897671180b2d1e67b0ac9ddbff0d03e" kindref="member">inserTeteListe</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l,<sp/><ref refid="struct_processus" kindref="compound">Processus</ref><sp/>p){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>tmp<sp/>=<sp/>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref>)malloc<sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcellule_liste" kindref="compound">celluleListe</ref>));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Erreur<sp/>d&apos;allocation<sp/>liste\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp-&gt;<ref refid="structcellule_liste_1a8e2db23d1b77936913f80f7aa42552b1" kindref="member">proc</ref><sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp-&gt;<ref refid="structcellule_liste_1a0dfc7db9d5534dfe71ac1563b2205935" kindref="member">suivant</ref><sp/>=<sp/>l;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>l<sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/><ref refid="_liste_8c_1a065b219bb5d73ee1c92080a887fb11c2" kindref="member">inserProcListe</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>l,<ref refid="struct_processus" kindref="compound">Processus</ref><sp/>p){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref><sp/>ll<sp/>=<sp/>l;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_liste_8c_1ad9827381e304cd3d11a4011bdbb8ea04" kindref="member">estVideListe</ref>(l)){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_liste_8c_1a7897671180b2d1e67b0ac9ddbff0d03e" kindref="member">inserTeteListe</ref>(l,p);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="_liste_8c_1ad9827381e304cd3d11a4011bdbb8ea04" kindref="member">estVideListe</ref>(ll-&gt;<ref refid="structcellule_liste_1a0dfc7db9d5534dfe71ac1563b2205935" kindref="member">suivant</ref>)){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ll<sp/>=<sp/>ll-&gt;<ref refid="structcellule_liste_1a0dfc7db9d5534dfe71ac1563b2205935" kindref="member">suivant</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>ll-&gt;<ref refid="structcellule_liste_1a0dfc7db9d5534dfe71ac1563b2205935" kindref="member">suivant</ref><sp/>=<sp/><ref refid="_liste_8c_1a7897671180b2d1e67b0ac9ddbff0d03e" kindref="member">inserTeteListe</ref>(ll-&gt;<ref refid="structcellule_liste_1a0dfc7db9d5534dfe71ac1563b2205935" kindref="member">suivant</ref>,p);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_liste_8c_1a5ac1eea0342cafb8bb1c7d9dd5c25235" kindref="member">supElement</ref>(<ref refid="_liste_8h_1a2beb3657e7e9a16472be77ab541bd15e" kindref="member">Liste</ref>*<sp/>l,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pid){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_liste_8c_1ad9827381e304cd3d11a4011bdbb8ea04" kindref="member">estVideListe</ref>(*l)){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*l)-&gt;proc.pid<sp/>==<sp/>pid){</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_liste_8c_1ade248ebe678697a4ae00970752e7e394" kindref="member">supTeteListe</ref>(l);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_liste_8c_1a5ac1eea0342cafb8bb1c7d9dd5c25235" kindref="member">supElement</ref>(&amp;(*l)-&gt;suivant,pid);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Devoir/OS/Projet/Doxygen.debug/Src/Liste.c"/>
+  </compounddef>
+</doxygen>

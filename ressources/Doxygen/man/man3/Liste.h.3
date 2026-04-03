@@ -1,0 +1,170 @@
+.TH "C:/Devoir/OS/Projet/Doxygen.debug/Inc/Liste.h" 3 "Version 3" "Projet_ordonnancement_OS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Devoir/OS/Projet/Doxygen.debug/Inc/Liste.h
+.SH SYNOPSIS
+.br
+.PP
+\fR#include 'ProcStruct\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBcelluleListe\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBcelluleListe\fP * \fBListe\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBestVideListe\fP (\fBListe\fP l)"
+.br
+.ti -1c
+.RI "\fBListe\fP \fBinitListe\fP ()"
+.br
+.ti -1c
+.RI "\fBProcessus\fP \fBprocListe\fP (\fBListe\fP l)"
+.br
+.ti -1c
+.RI "\fBListe\fP \fBsuivantListe\fP (\fBListe\fP l)"
+.br
+.ti -1c
+.RI "void \fBsupTeteListe\fP (\fBListe\fP *l)"
+.br
+.ti -1c
+.RI "\fBListe\fP \fBinserTeteListe\fP (\fBListe\fP l, \fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "\fBListe\fP \fBinserProcListe\fP (\fBListe\fP l, \fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "int \fBsupElement\fP (\fBListe\fP *l, int pid)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBcelluleListe\fP* \fBListe\fP"
+
+.SH "Function Documentation"
+.PP 
+.SS "int estVideListe (\fBListe\fP l)"
+Verifie si la liste est vide, renvoie Vrai si vide ,Faux sinon 
+.PP
+\fBParameters\fP
+.RS 4
+\fIl\fP : La \fBListe\fP à vérifier 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+1 ou 0
+.RE
+.PP
+
+.SS "\fBListe\fP initListe ()"
+Initialise une liste vide 
+.PP
+\fBReturns\fP
+.RS 4
+une liste vide (NULL)
+.RE
+.PP
+
+.SS "\fBListe\fP inserProcListe (\fBListe\fP l, \fBProcessus\fP p)"
+Insertition en queue d'une liste 
+.PP
+\fBParameters\fP
+.RS 4
+\fIl\fP : la \fBListe\fP de processus 
+.br
+\fIp\fP : le processus à ajouter 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+La liste mis à jour
+.RE
+.PP
+
+.SS "\fBListe\fP inserTeteListe (\fBListe\fP l, \fBProcessus\fP p)"
+Ajoute une cellule à la tête de la liste donnée 
+.PP
+\fBParameters\fP
+.RS 4
+\fIl\fP : pointeur sur la liste 
+.br
+\fIp\fP : le processus contenu dans la cellule 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+La liste mis à jour
+.RE
+.PP
+
+.SS "\fBProcessus\fP procListe (\fBListe\fP l)"
+Renvoie le processus de la cellule en paramètre 
+.PP
+\fBParameters\fP
+.RS 4
+\fIl\fP : pointeur sur la cellule 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+le processus courant
+.RE
+.PP
+
+.SS "\fBListe\fP suivantListe (\fBListe\fP l)"
+Renvoie la cellule suivante de la cellule en paramètre 
+.PP
+\fBParameters\fP
+.RS 4
+\fIl\fP : pointeur sur la cellule 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+la cellule suivante
+.RE
+.PP
+
+.SS "int supElement (\fBListe\fP * l, int pid)"
+Supprime une cellule dans une liste de processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fIl\fP : La liste de processus 
+.br
+\fIpid\fP : numéro du processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Une verification : 1 si le processus est trouvé, 0 sinon
+.RE
+.PP
+
+.SS "void supTeteListe (\fBListe\fP * l)"
+Supprime la tete de la liste, passage par adresse 
+.PP
+\fBParameters\fP
+.RS 4
+\fIl\fP : adresse de la liste de processus
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projet_ordonnancement_OS from the source code\&.

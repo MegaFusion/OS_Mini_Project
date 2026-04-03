@@ -1,0 +1,292 @@
+.TH "C:/Devoir/OS/Projet/Doxygen.debug/Src/ProcStruct.c" 3 "Version 3" "Projet_ordonnancement_OS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Devoir/OS/Projet/Doxygen.debug/Src/ProcStruct.c
+.SH SYNOPSIS
+.br
+.PP
+\fR#include 'ProcStruct\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCycle\fP \fBinitCycle\fP ()"
+.br
+.ti -1c
+.RI "int \fBestVideCycle\fP (\fBCycle\fP c)"
+.br
+.ti -1c
+.RI "int \fBget_DureeCycle\fP (\fBCycle\fP c)"
+.br
+.ti -1c
+.RI "\fBCycle\fP \fBsuivantCycle\fP (\fBCycle\fP c)"
+.br
+.ti -1c
+.RI "\fBCycle\fP \fBinserTeteDureeCycle\fP (\fBCycle\fP c, int temps)"
+.br
+.ti -1c
+.RI "\fBCycle\fP \fBinserDureeCycle\fP (\fBCycle\fP c, int temps)"
+.br
+.ti -1c
+.RI "void \fBsupTeteCycle\fP (\fBCycle\fP *c)"
+.br
+.ti -1c
+.RI "\fBCycle\fP \fBget_ES\fP (\fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "\fBCycle\fP \fBget_CPU\fP (\fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "\fBCycle\fP \fBcreerCycle\fP (int durees[], int taille)"
+.br
+.ti -1c
+.RI "\fBProcessus\fP \fBinitProc\fP (int pid, int arrive, int *tab_CPU, int taille_CPU, int *tab_ES, int taille_ES)"
+.br
+.ti -1c
+.RI "int \fBnon_arrive\fP (\fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "int \fBest_pret\fP (\fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "int \fBest_en_cours\fP (\fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "int \fBest_bloque\fP (\fBProcessus\fP p)"
+.br
+.ti -1c
+.RI "int \fBest_termine\fP (\fBProcessus\fP p)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBCycle\fP creerCycle (int durees[], int taille)"
+Initialise un tableau de temps CPU ou ES pour un processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdurees\fP : tableau de temps 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+un \fBCycle\fP CPU ou ES
+.RE
+.PP
+
+.SS "int est_bloque (\fBProcessus\fP p)"
+Verifie si un processus est bloqué 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP : processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+1 si bloqué, 0 sinon
+.RE
+.PP
+
+.SS "int est_en_cours (\fBProcessus\fP p)"
+Verifie si un processus est en_cours 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP : processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+1 si en_cours, 0 sinon
+.RE
+.PP
+
+.SS "int est_pret (\fBProcessus\fP p)"
+Verifie si un processus est prêt 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP : processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+1 si pret, 0 sinon
+.RE
+.PP
+
+.SS "int est_termine (\fBProcessus\fP p)"
+Verifie si un processus est terminé 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP : processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+1 si terminé, 0 sinon
+.RE
+.PP
+
+.SS "int estVideCycle (\fBCycle\fP c)"
+Verifie si un cycle est vide 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP : le cycle à verifier 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+: 1 si vide, 0 sinon
+.RE
+.PP
+
+.SS "\fBCycle\fP get_CPU (\fBProcessus\fP p)"
+Renvoie le cycle CPU d'un processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP : processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+le cycle CPU du processus
+.RE
+.PP
+
+.SS "int get_DureeCycle (\fBCycle\fP c)"
+Renvoie la durée stockée dans une cellule 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP : pointeur vers la cellule 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+la durée
+.RE
+.PP
+
+.SS "\fBCycle\fP get_ES (\fBProcessus\fP p)"
+Renvoie le cycle E/S d'un processus 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP : processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+le cycle E/S du processus
+.RE
+.PP
+
+.SS "\fBCycle\fP initCycle ()"
+Initialise un \fBCycle\fP 
+.PP
+\fBReturns\fP
+.RS 4
+un \fBCycle\fP vide
+.RE
+.PP
+
+.SS "\fBProcessus\fP initProc (int pid, int arrive, int * tab_CPU, int taille_CPU, int * tab_ES, int taille_ES)"
+Initialise un \fBProcessus\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpid\fP : le numéro de \fBProcessus\fP 
+.br
+\fIarrive\fP : le temps d'arrivée dans le système 
+.br
+\fItab_ES\fP : tableau de temps ES 
+.br
+\fItab_CPU\fP : tableau de temps CPU 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Un processus initialisé
+.RE
+.PP
+
+.SS "\fBCycle\fP inserDureeCycle (\fBCycle\fP c, int temps)"
+Insertion en queue du cycle donné 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP : pointeur sur la cellule du cycle 
+.br
+\fItemps\fP : la durée contenu dans la cellule 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Le cycle mis à jour
+.RE
+.PP
+
+.SS "\fBCycle\fP inserTeteDureeCycle (\fBCycle\fP c, int temps)"
+Insertion en tête d'un cycle 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP : pointeur sur la cellule du cycle 
+.br
+\fItemps\fP : la durée contenu dans la cellule 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Le cycle mis à jour
+.RE
+.PP
+
+.SS "int non_arrive (\fBProcessus\fP p)"
+Verifie si un processus n'est pas encore arrivé dans le système 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP : processus 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+1 si arrivé, 0 sinon
+.RE
+.PP
+
+.SS "\fBCycle\fP suivantCycle (\fBCycle\fP c)"
+Renvoie la cellule suivante 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP : la cellule courante 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+la cellule suivante
+.RE
+.PP
+
+.SS "void supTeteCycle (\fBCycle\fP * c)"
+Supprime la tête du cycle donnée 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP : adresse vers cycle
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projet_ordonnancement_OS from the source code\&.

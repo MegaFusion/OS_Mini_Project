@@ -1,0 +1,58 @@
+\doxysection{Proc\+Struct.\+h}
+\hypertarget{_proc_struct_8h_source}{}\label{_proc_struct_8h_source}\index{C:/Devoir/OS/Projet/Doxygen.debug/Inc/ProcStruct.h@{C:/Devoir/OS/Projet/Doxygen.debug/Inc/ProcStruct.h}}
+\mbox{\hyperlink{_proc_struct_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ PROCSTRUCT\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ PROCSTRUCT\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcellule}{cellule}}\{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcellule_abdc3435566d8c869e18e5579c4a0e953}{duree}};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcellule}{cellule}}*\ \mbox{\hyperlink{structcellule_a697f75c7dd9a48ef34247501cff1c084}{suivant}};}
+\DoxyCodeLine{00016\ \}*\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_processus_a5c907c4a6a278e1fa2287f625381c285}{pid}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_processus_a4248efbd13b9394be63391dae15a4b66}{arrive}};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ \mbox{\hyperlink{struct_processus_a806ad2ddd2773351e88c5f4323d1e777}{ES}};}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ \mbox{\hyperlink{struct_processus_ae29697e7ea4db9386bcfbf0d0956df37}{CPU}};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_processus_af4e781dc3f389522f06b41da8e324dda}{etat}};\ \ \ \textcolor{comment}{/*\ état\ du\ processus\ -\/\ 0\ :\ non\ arrivé}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/\ 1\ :\ pret}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/\ 2\ :\ en\_cours}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/\ 3\ :\ bloqué}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/\ 4\ :\ terminé}}
+\DoxyCodeLine{00037\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/\ 5\ :\ terminé\ (\ pour\ l'affichage\ )}}
+\DoxyCodeLine{00038\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/\ 6\ :\ prêt\ mais\ en\ attente\ après\ quantum\ épuisé}}
+\DoxyCodeLine{00039\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_processus_ade7b41965f58214785f03344697f9a9a}{temps\_fin}};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_processus_a803b6d583bf50ffe633eb57e81366b84}{temps\_CPU}};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_processus_ade3a5d21ad11ff1669c4f099f0625595}{temps\_ES}};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_processus_a6a299b91d8a68e36386c5fd2fa250334}{temps\_premier\_CPU}};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_processus_a8725ff30f67763349cb3229359b5d1eb}{temps\_premier\_CPU\_verif}};\ \ \ \ \textcolor{comment}{/*\ Pour\ verifier\ si\ le\ tp\_CPU\ a\ déja\ été\ affecté\ */}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \}\mbox{\hyperlink{struct_processus}{Processus}};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ \mbox{\hyperlink{_proc_struct_8h_ab47fe3e54978f0f6a71cfdb7076857f0}{initCycle}}();}
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_proc_struct_8h_a94d74b05aa292c781cd7c27492732e90}{estVideCycle}}(\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ c);}
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_proc_struct_8h_a843f0220c5dd400314b7c6a818007b4f}{get\_DureeCycle}}(\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ c);}
+\DoxyCodeLine{00051\ \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ \mbox{\hyperlink{_proc_struct_8h_a58c9a753a61c431ff73b42cc1e634bc3}{suivantCycle}}(\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ c);}
+\DoxyCodeLine{00052\ \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ \mbox{\hyperlink{_proc_struct_8h_a8cd63e24c680937d13c8994c49b0e4e2}{inserTeteDureeCycle}}(\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ c,\ \textcolor{keywordtype}{int}\ temps);}
+\DoxyCodeLine{00053\ \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ \mbox{\hyperlink{_proc_struct_8h_ad6c8d0fd5b505a000bc71ad122449046}{inserDureeCycle}}(\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ c,\textcolor{keywordtype}{int}\ temps);}
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_proc_struct_8h_a91fd3e6378e45dd43c64367a963f6c29}{supTeteCycle}}(\mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ *c);}
+\DoxyCodeLine{00055\ \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ \mbox{\hyperlink{_proc_struct_8h_a1670c6327fb750bb8eda88f967dc1b61}{get\_ES}}(\mbox{\hyperlink{struct_processus}{Processus}}\ p);}
+\DoxyCodeLine{00056\ \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ \mbox{\hyperlink{_proc_struct_8h_a1e32d5f391a564dddaba370003e8588f}{get\_CPU}}(\mbox{\hyperlink{struct_processus}{Processus}}\ p);}
+\DoxyCodeLine{00057\ \mbox{\hyperlink{_proc_struct_8h_add6a42ce86e99e9ac806e4e9f71d64b1}{Cycle}}\ \mbox{\hyperlink{_proc_struct_8h_a995123d410572a7bca2ab79d79e37546}{creerCycle}}(\textcolor{keywordtype}{int}\ durees[],\ \textcolor{keywordtype}{int}\ taille);}
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_proc_struct_8h_aaabf2a4d20bc75e75c9f640436419122}{non\_arrive}}(\mbox{\hyperlink{struct_processus}{Processus}}\ p);}
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_proc_struct_8h_aef4ffc349c4bbd51c5e548639739e31a}{est\_pret}}(\mbox{\hyperlink{struct_processus}{Processus}}\ p);}
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_proc_struct_8h_ad379b14dff541a24578f91a9a4290cd6}{est\_en\_cours}}(\mbox{\hyperlink{struct_processus}{Processus}}\ p);}
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_proc_struct_8h_ab14735f3543458f2849555246c12e8f0}{est\_bloque}}(\mbox{\hyperlink{struct_processus}{Processus}}\ p);}
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_proc_struct_8h_a4688d9ffd28ac8bb4d076489663112b2}{est\_termine}}(\mbox{\hyperlink{struct_processus}{Processus}}\ p);}
+\DoxyCodeLine{00063\ \mbox{\hyperlink{struct_processus}{Processus}}\ \mbox{\hyperlink{_proc_struct_8h_ac16e6eff2dc9409f7becd2b26c02cfab}{initProc}}(\textcolor{keywordtype}{int}\ pid,\ \textcolor{keywordtype}{int}\ arrive,\ \textcolor{keywordtype}{int}*\ tab\_CPU,\textcolor{keywordtype}{int}\ taille\_CPU,\ \textcolor{keywordtype}{int}*\ tab\_ES,\ \textcolor{keywordtype}{int}\ taille\_ES);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
