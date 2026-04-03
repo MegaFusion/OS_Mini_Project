@@ -312,8 +312,8 @@ void ecrire_indicateurs(FILE *csv, Liste liste,
     fprintf(csv, "\n");
 
     /* taux occupation */
-    fprintf(csv, "T_occupation\t%.2f\n",
-            (double)Taux_occupation(temps_CPU_actif, temps_total));
+    fprintf(csv, "T_occupation");
+    fprintf(csv,"\t%.2f\n",Taux_occupation(temps_CPU_actif, temps_total));
 }
 
 Liste trier_par_arrivee(Liste l){
@@ -362,7 +362,7 @@ int tous_termines_file(Liste l){
     return 1;
 }
 
-int ordonnancer(Liste *liste, int algo, int quantum, int export_csv){
+int ordonnancer(Liste *liste, int algo, int quantum, int export_csv, char* fichier){
     /**
      * Ordonnancement d'une liste de processus selon l'algorithme choisi.
      * @param liste      : adresse de la liste de processus
@@ -374,19 +374,24 @@ int ordonnancer(Liste *liste, int algo, int quantum, int export_csv){
     int temps = 0;
     int ticks_restants  = 0;
     Liste l;
-    Liste courant       = NULL;
-    int cpu_libre       = 1;
+    Liste courant = NULL;
+    int cpu_libre = 1;
     int temps_CPU_actif = 0;
 
     const char *noms[] = {"FIFO", "SJF", "SJRF", "RR"};
 
     *liste = trier_par_arrivee(*liste);
 
-    /* Ouverture fichier CSV */
+    /* Création du fichier CSV */
     FILE *csv = NULL;
     if (export_csv){
         char nom_fichier[50];
-        sprintf(nom_fichier, "ordonnancement_%s.csv", noms[algo]);
+        if (fichier){
+            sprintf(nom_fichier, "%s.csv", fichier);
+        }
+        else{
+            sprintf(nom_fichier, "ordonnancement_%s.csv", noms[algo]);
+        }
         csv = fopen(nom_fichier, "w");
         if (csv == NULL){
             printf("Erreur : impossible de créer le fichier CSV\n");
@@ -454,14 +459,14 @@ int ordonnancer(Liste *liste, int algo, int quantum, int export_csv){
                     courant->proc.temps_fin = temps;
                 }
 
-                cpu_libre      = 1;
-                courant        = NULL;
+                cpu_libre = 1;
+                courant = NULL;
                 ticks_restants = 0;
             }
             else if (algo == ALGO_RR && ticks_restants == 0){
                 courant->proc.etat = 6;
-                cpu_libre          = 1;
-                courant            = NULL;
+                cpu_libre = 1;
+                courant = NULL;
             }
         }
 

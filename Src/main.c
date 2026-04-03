@@ -16,6 +16,7 @@ void afficher_aide(){
     printf("  -q <quantum>     Quantum pour RR (par défaut : 2)\n");
     printf("  -f <fichier>     Charger les processus depuis un fichier\n");
     printf("  -csv             Sauvegarder les resultats en fichier CSV\n");
+    printf("  -n               Nom du fichier\n");
     printf("  -h               Afficher cette aide\n\n");
     printf("Exemple :\n");
     printf(" ./main -a RR -q 3 -f processus.txt -csv\n\n");
@@ -43,11 +44,15 @@ Liste creer_liste_defaut(){
 }
 
 int main(int argc, char *argv[]){
+    /**
+     * Parsing pour l'invité de commande et pour lancer le programme
+     */
 
     int   algo        = -1;
     int   quantum     = 2;
     int   export_csv  = 0;
-    char *fichier     = NULL;
+    char* fichier     = NULL;
+    char* nom_fichier = NULL;
 
     /* Parsing des arguments */
     for (int i = 1; i < argc; i++){
@@ -83,6 +88,10 @@ int main(int argc, char *argv[]){
         else if (strcmp(argv[i], "-csv") == 0){
             export_csv = 1;
         }
+        else if (strcmp(argv[i], "-n") == 0){
+            i++;
+            nom_fichier = argv[i];
+        }
         else {
             printf("Erreur : argument '%s' inconnu\n", argv[i]);
             printf("Utilisez -h pour l'aide\n");
@@ -114,7 +123,7 @@ int main(int argc, char *argv[]){
     }
 
     /* Lancement de l'ordonnancement */
-    ordonnancer(&liste, algo, quantum, export_csv);
+    ordonnancer(&liste, algo, quantum, export_csv, nom_fichier);
 
     return 0;
 }
