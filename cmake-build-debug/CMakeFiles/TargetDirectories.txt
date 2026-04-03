@@ -1,0 +1,4 @@
+C:/Users/Tenzin/CLionProjects/ProjetOS/cmake-build-debug/CMakeFiles/ProjetOS.dir
+C:/Users/Tenzin/CLionProjects/ProjetOS/cmake-build-debug/CMakeFiles/ProjetOS_GUI.dir
+C:/Users/Tenzin/CLionProjects/ProjetOS/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Tenzin/CLionProjects/ProjetOS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
