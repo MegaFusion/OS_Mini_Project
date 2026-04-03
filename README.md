@@ -53,6 +53,7 @@ Requiert `gcc` avec les flags `-Wall -Wextra`.
 - | `-q <n>` | Quantum pour RR (défaut : 2) |
 - | `-f <fichier>` | Charger les processus depuis un fichier |
 - | `-csv` | Sauvegarder les résultats dans un fichier CSV |
+- | `-n` | Nommer le fichier CSV |
 - | `-h` | Afficher l'aide |
 
 ### Exemples
@@ -62,7 +63,7 @@ Requiert `gcc` avec les flags `-Wall -Wextra`.
 ./main -a FIFO
 
 # Round Robin avec quantum 3 et export CSV
-./main -a RR -q 3 -csv
+./main -a RR -q 3 -csv -test
 
 # SJF depuis un fichier
 ./main -a SJF -f processus.txt
